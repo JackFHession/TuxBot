@@ -1,0 +1,6 @@
+Server/Settings/*.json
+Server/Settings/*
+Server/short_term_memory/*
+
+Client/Virtual_Environments/*
+Client/textoutput/*

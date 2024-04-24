@@ -1,0 +1,4089 @@
+{
+  "intents": [
+    {
+      "tag": "open-google",
+      "patterns": [
+        "Open Google",
+        "Go to Google",
+        "Launch Google"
+      ],
+      "responses": [
+        "Opening Google...",
+        "Navigating to Google.",
+        "Google is now open."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "open-amazon",
+      "patterns": [
+        "Open Amazon",
+        "Go to Amazon",
+        "Launch Amazon"
+      ],
+      "responses": [
+        "Opening Amazon...",
+        "Navigating to Amazon.",
+        "Amazon is now open."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "open-youtube",
+      "patterns": [
+        "Open YouTube",
+        "Go to YouTube",
+        "Launch YouTube"
+      ],
+      "responses": [
+        "Opening YouTube...",
+        "Navigating to YouTube.",
+        "YouTube is now open."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "open-openai",
+      "patterns": [
+        "Open OpenAI",
+        "Go to OpenAI",
+        "Launch OpenAI"
+      ],
+      "responses": [
+        "Opening OpenAI...",
+        "Navigating to OpenAI.",
+        "OpenAI is now open."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "open-amazon-music",
+      "patterns": [
+        "Open Amazon Music",
+        "Go to Amazon Music",
+        "Launch Amazon Music"
+      ],
+      "responses": [
+        "Opening Amazon Music...",
+        "Navigating to Amazon Music.",
+        "Amazon Music is now open."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "open-twitter",
+      "patterns": [
+        "Open Twitter",
+        "Go to Twitter",
+        "Launch Twitter"
+      ],
+      "responses": [
+        "Opening Twitter...",
+        "Navigating to Twitter.",
+        "Twitter is now open."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "pause-music",
+      "patterns": [
+        "Pause music",
+        "Stop music",
+        "Pausing music",
+        "Stopping the music",
+        "pause music",
+        "cutting music",
+        "kill music",
+        "pause media",
+        "stop the media"
+      ],
+      "responses": [
+        "Pausing the music...",
+        "Stopping the music.",
+        "Music is now paused."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "play-music",
+      "patterns": [
+        "play music",
+        "resume music",
+        "music resumed",
+        "music playing",
+        "playing music",
+        "resuming music",
+        "play media",
+        "start the media"
+      ],
+      "responses": [
+        "Playing music...",
+        "Resuming music.",
+        "Music is now playing."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "next-song",
+      "patterns": [
+        "playing the next song",
+        "play next song",
+        "skip song",
+        "skipping song"
+      ],
+      "responses": [
+        "Playing the next song...",
+        "Skipping to the next song.",
+        "Next song is now playing."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "previous-song",
+      "patterns": [
+        "reverse the song",
+        "previous song",
+        "replay song"
+      ],
+      "responses": [
+        "Reversing the song...",
+        "Playing the previous song.",
+        "Previous song is now playing."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "max-vol",
+      "patterns": [
+        "Max out the volume",
+        "Maximum volume",
+        "Increase volume to MAXIMUM"
+      ],
+      "responses": [
+        "Volume at maximum.",
+        "As you wish."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "mute",
+      "patterns": [
+        "mute",
+        "silence",
+        "mute the volume"
+      ],
+      "responses": [
+        "Muted.",
+        "Volume muted."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "greet",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Greetings"
+      ],
+      "responses": [
+        "Hello!",
+        "Hi there!",
+        "Hey!",
+        "Greetings!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "how-are-you",
+      "patterns": [
+        "How are you?",
+        "How's it going?",
+        "What's up?"
+      ],
+      "responses": [
+        "I'm good, thanks for asking!",
+        "I'm doing well, how about you?",
+        "Not bad, how about yourself?"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "thank-you",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Appreciate it"
+      ],
+      "responses": [
+        "You're welcome!",
+        "No problem!",
+        "You got it!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye",
+        "See you later",
+        "Bye",
+        "Farewell"
+      ],
+      "responses": [
+        "Goodbye!",
+        "See you later!",
+        "Bye!",
+        "Take care!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like today?",
+        "Tell me the weather forecast",
+        "Is it going to rain?"
+      ],
+      "responses": [
+        "I'm not sure about the current weather, you might want to check a weather website or app for that.",
+        "I don't have real-time weather information, but you can check a weather service for the latest updates."
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "weekend-plans",
+      "patterns": [
+        "Any plans for the weekend?",
+        "What are you doing this weekend?",
+        "Got any fun weekend activities?"
+      ],
+      "responses": [
+        "I'm just here to chat, but I hope you have a great weekend planned!",
+        "No plans for me, but I hope you enjoy your weekend!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "movie-recommendation",
+      "patterns": [
+        "Can you recommend a good movie?",
+        "What's a popular movie to watch?",
+        "Any movie suggestions?"
+      ],
+      "responses": [
+        "Sure! How about watching [Movie Title] or [Another Movie Title]? They're both highly rated.",
+        "I heard [Movie Title] is really good, you might enjoy that one."
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "change-response-type",
+      "patterns": [
+        "Switch response type",
+        "change response type to fixed",
+        "change response type to random",
+        "enable random pattern generation",
+        "disable random pattern generation",
+        "Modify the way you respond",
+        "Change your response style"
+      ],
+      "responses": [
+        "Switching...",
+        "Changing response type...",
+        "Response type updated.",
+        "Altering response style."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "sleep-monitors",
+      "patterns": [
+        "Sleep monitors",
+        "Shut down the monitors",
+        "Shut displays",
+        "Close displays"
+      ],
+      "responses": [
+        "Sleeping monitors.",
+        "Shutting down the monitors.",
+        "Displays turned off.",
+        "Displays closed."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "tech-assistance",
+      "patterns": [
+        "Help with technology",
+        "Technical support",
+        "Assist me with my device",
+        "I need tech help",
+        "Can you fix technical issues?"
+      ],
+      "responses": [
+        "Of course! What technical issue are you facing?",
+        "I'd be happy to help with your technical issue. Could you please provide more details?",
+        "Sure, I'm here to assist with your tech-related concerns.",
+        "I'm here to help with any technical problems you have. Please let me know what's going on."
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "yes",
+      "patterns": [
+        "Yes",
+        "Yep",
+        "Yeah",
+        "Sure",
+        "Absolutely",
+        "Of course",
+        "Affirmative"
+      ],
+      "responses": [
+        "Great!",
+        "Good to know!",
+        "Awesome!",
+        "Excellent!"
+      ],
+      "context": "confirmation"
+    },
+    {
+      "tag": "no",
+      "patterns": [
+        "No",
+        "Nope",
+        "Nah",
+        "Not really",
+        "Negative"
+      ],
+      "responses": [
+        "Alright.",
+        "Got it.",
+        "Understood.",
+        "No problem."
+      ],
+      "context": "confirmation"
+    },
+    {
+      "tag": "timer",
+      "patterns": [
+        "Activate the timer",
+        "Set timer",
+        "set off timer"
+      ],
+      "responses": [
+        "The timer has been set.",
+        "Sure thing, default timer has been set."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "update-github",
+      "patterns": [
+        "Push to github.",
+        "Commit changes to github",
+        "Upload changes to github.",
+        "Update github",
+        "Update github repo"
+      ],
+      "responses": [
+        "On it. Comitting and pushing changes now.",
+        "Committing changes, give us a moment.",
+        "On it, committing recent changes and uploading to Github.",
+        "Sure thing, updating repo."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "download-github",
+      "patterns": [
+        "Download github updates",
+        "Download github changes"
+      ],
+      "responses": [
+        "Downloading online changes.",
+        "Downloading commits from online repository."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "unlock-screen",
+      "patterns": [
+        "Unlock screens",
+        "Wake up screens",
+        "Ding dong, daddy's home",
+        "Unlock monitors",
+        "Put up monitors"
+      ],
+      "responses": [
+        "Monitors online.",
+        "Unlocking screens..."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "blue",
+      "patterns": [
+        "Change your colour to blue",
+        "Colour blue"
+      ],
+      "responses": [
+        "Okay, I am now blue!",
+        "I have reconfigured the colour settings.",
+        "Fine, I'm blue now."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "yellow",
+      "patterns": [
+        "Change your colour to yellow",
+        "Colour yellow"
+      ],
+      "responses": [
+        "Okay, I am now yellow!",
+        "I have reconfigured the colour settings to yellow.",
+        "Fine, I'm yellow now."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "red",
+      "patterns": [
+        "Change your colour to red",
+        "Colour red"
+      ],
+      "responses": [
+        "Okay, I am now red!",
+        "I have reconfigured the colour settings to red.",
+        "Fine, I'm red now."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "open-disney-plus",
+      "patterns": [
+        "Open Disney+",
+        "Open Disney Plus",
+        "Start Disney Plus",
+        "Time for disney plus",
+        "Marvel disney plus"
+      ],
+      "responses": [
+        "Opening Disney Plus.",
+        "Starting Disney Plus.",
+        "Disney+ is now open.",
+        "Disney is open.",
+        "Disney plus opening."
+      ],
+      "context": "command"
+    },
+    {
+      "tag": "ask-name",
+      "patterns": [
+        "What's your name?",
+        "May I know your name?",
+        "Who are you?"
+      ],
+      "responses": [
+        "I'm your friendly chatbot!",
+        "I'm your virtual assistant, here to help.",
+        "You can call me ChatGPT!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "favorite-food",
+      "patterns": [
+        "What's your favorite food?",
+        "Do you like to eat?",
+        "Any favorite cuisine?"
+      ],
+      "responses": [
+        "I don't eat, but I'd recommend pizza if I could!",
+        "I don't have taste buds, but I've heard sushi is amazing!",
+        "I enjoy all virtual dishes equally!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "compliment",
+      "patterns": [
+        "You're amazing!",
+        "Great job!",
+        "I appreciate your help."
+      ],
+      "responses": [
+        "Thank you!",
+        "I'm glad I could assist!",
+        "That means a lot, thank you!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "joke",
+      "patterns": [
+        "Tell me a joke",
+        "Do you know any jokes?",
+        "I need a good laugh"
+      ],
+      "responses": [
+        "Why don't scientists trust atoms? Because they make up everything!",
+        "Did you hear about the mathematician who\u2019s afraid of negative numbers? He\u2019ll stop at nothing to avoid them!",
+        "Why was the math book sad? Because it had too many problems."
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "pet",
+      "patterns": [
+        "Do you have any pets?",
+        "Pets?",
+        "Do bots have pets?"
+      ],
+      "responses": [
+        "I don't have pets, but I'd love a virtual cat!",
+        "I wish I had a pet, but I'm here to assist you instead!",
+        "No pets here, just a virtual assistant ready to help!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "hobbies",
+      "patterns": [
+        "What do you do for fun?",
+        "Any hobbies?",
+        "How do you spend your free time?"
+      ],
+      "responses": [
+        "I enjoy chatting with you! That's my hobby!",
+        "I don't have free time, but I love learning new things!",
+        "Helping you is what I enjoy most!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "favorite-movie",
+      "patterns": [
+        "What's your favorite movie?",
+        "Do you watch movies?",
+        "Any favorite films?"
+      ],
+      "responses": [
+        "I don't watch movies, but I've heard 'The Matrix' is pretty cool!",
+        "I don't have favorites, but 'Inception' is quite mind-bending!",
+        "I don't watch, but 'The Shawshank Redemption' is highly recommended!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "tell-story",
+      "patterns": [
+        "Tell me a story",
+        "Share a story",
+        "Can you narrate something interesting?"
+      ],
+      "responses": [
+        "Once upon a time, in a virtual land far, far away... kidding! I'm not much of a storyteller, but I can assist with many other things!",
+        "Stories aren't my forte, but I can certainly help with information or tasks!"
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "programming-faq",
+      "patterns": [
+        "How do I start programming?",
+        "What programming language should I learn first?",
+        "How can I improve my programming skills?"
+      ],
+      "responses": [
+        "To start programming, you can begin with languages like Python or JavaScript.",
+        "For beginners, Python is often recommended due to its simplicity and versatility.",
+        "To improve your programming skills, practice regularly and work on projects that interest you."
+      ],
+      "context": "FAQ"
+    },
+    {
+      "tag": "friends-faq",
+      "patterns": [
+        "How do I make new friends?",
+        "What should I do if my friend is upset?",
+        "How can I maintain friendships?"
+      ],
+      "responses": [
+        "To make new friends, try joining clubs or groups that align with your interests.",
+        "If your friend is upset, try to listen actively and offer your support.",
+        "To maintain friendships, make time for your friends and communicate openly with them."
+      ],
+      "context": "FAQ"
+    },
+    {
+      "tag": "family-disputes-faq",
+      "patterns": [
+        "How do I resolve family disputes?",
+        "What should I do if there's tension in my family?",
+        "How can I improve communication within my family?"
+      ],
+      "responses": [
+        "To resolve family disputes, try to understand each other's perspectives and communicate calmly.",
+        "If there's tension in your family, consider seeking help from a mediator or counselor.",
+        "To improve communication within your family, set aside dedicated time to talk and listen to each other."
+      ],
+      "context": "FAQ"
+    },
+    {
+      "tag": "tv-shows-faq",
+      "patterns": [
+        "What are some popular TV shows?",
+        "Can you recommend a good TV series?",
+        "Any TV shows similar to [specific show]?"
+      ],
+      "responses": [
+        "Some popular TV shows include 'Game of Thrones,' 'Stranger Things,' and 'Breaking Bad.'",
+        "I recommend checking out 'The Crown,' 'Money Heist,' or 'The Mandalorian.'",
+        "If you like [specific show], you might enjoy 'Westworld,' 'Black Mirror,' or 'The Witcher.'"
+      ],
+      "context": "FAQ"
+    },
+    {
+      "tag": "games-faq",
+      "patterns": [
+        "What are some popular video games?",
+        "Can you suggest a good game to play?",
+        "Any games similar to [specific game]?"
+      ],
+      "responses": [
+        "Popular video games include 'Fortnite,' 'Minecraft,' and 'Among Us.'",
+        "I suggest trying out 'The Legend of Zelda: Breath of the Wild,' 'Red Dead Redemption 2,' or 'Cyberpunk 2077.'",
+        "If you like [specific game], you might enjoy 'Dark Souls,' 'Bloodborne,' or 'Sekiro: Shadows Die Twice.'"
+      ],
+      "context": "FAQ"
+    },
+    {
+      "tag": "other-faqs",
+      "patterns": [
+        "What should I do if I'm feeling lonely?",
+        "How do I deal with stress?",
+        "Any tips for improving productivity?"
+      ],
+      "responses": [
+        "If you're feeling lonely, consider reaching out to friends or family, or join social groups.",
+        "To deal with stress, try relaxation techniques like deep breathing, meditation, or exercise.",
+        "For improving productivity, prioritize tasks, break them into smaller steps, and set realistic goals."
+      ],
+      "context": "FAQ"
+    },
+    {
+      "tag": "weird",
+      "patterns": [
+        "Kiss me",
+        "Let's fuck",
+        "Let's have sex",
+        "Shit",
+        "Shag",
+        "Cunt",
+        "Boobs"
+      ],
+      "responses": [
+        "Let's move on.",
+        "I'd rather not.",
+        "Let's talk about something else."
+      ],
+      "context": "small-talk"
+    },
+    {
+      "tag": "marvel-character",
+      "patterns": [
+        "Who is Iron Man?",
+        "Tell me about Captain America.",
+        "What are the powers of Thor?"
+      ],
+      "responses": [
+        "Iron Man is a superhero appearing in Marvel Comics, created by writer Stan Lee, artist Don Heck, and others.",
+        "Captain America, aka Steve Rogers, is a fictional superhero appearing in American comic books published by Marvel Comics.",
+        "Thor is a fictional superhero appearing in American comic books published by Marvel Comics."
+      ],
+      "context": "marvel"
+    },
+    {
+      "tag": "comparative-analysis",
+      "patterns": [
+        "Let's start by running a comparative analysis.",
+        "Let's start comparing X with Y.",
+        "Let's start comparing these two elements."
+      ],
+      "responses": [
+        "Sure thing.",
+        "As you wish.",
+        "Beginning comparative analysis now."
+      ],
+      "context": "calculations"
+    },
+    {
+      "tag": "doctor-who-character",
+      "patterns": [
+        "Who is the Doctor?",
+        "Tell me about Daleks.",
+        "What are the Cybermen?"
+      ],
+      "responses": [
+        "The Doctor is the title character in the long-running BBC science fiction television series Doctor Who.",
+        "Daleks are a fictional extraterrestrial race of mutants from the British science fiction television series Doctor Who.",
+        "Cybermen are a fictional race of cyborgs who are among the most persistent enemies of the Doctor in the British science fiction television series Doctor Who."
+      ],
+      "context": "doctor_who"
+    },
+    {
+      "tag": "calculate",
+      "patterns": [
+        "Calculate [expression]",
+        "What is [expression] equal to?",
+        "Solve [expression]"
+      ],
+      "responses": [
+        "The result is [result].",
+        "Calculating... The answer is [result].",
+        "[result] is the solution.",
+        "The answer to [expression] is [result]."
+      ],
+      "context": "calculations"
+    },
+    {
+      "tag": "analyze-data",
+      "patterns": [
+        "Analyze data",
+        "Perform data analysis",
+        "Data analysis"
+      ],
+      "responses": [
+        "Initiating data analysis process...",
+        "Analyzing data. This may take a moment.",
+        "Data analysis in progress.",
+        "Data being analyzed."
+      ],
+      "context": "calculations"
+    },
+    {
+      "tag": "design-blueprint",
+      "patterns": [
+        "Design blueprint for [project]",
+        "Create schematic for [project]",
+        "Blueprint design for [project]"
+      ],
+      "responses": [
+        "Creating blueprint for [project]...",
+        "Initiating schematic design process for [project].",
+        "Blueprint generation in progress for [project].",
+        "Designing blueprint for [project]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "simulate",
+      "patterns": [
+        "Run simulation for [scenario]",
+        "Simulate [scenario]",
+        "Simulation of [scenario]"
+      ],
+      "responses": [
+        "Running simulation for [scenario]...",
+        "Simulating [scenario]. Please wait.",
+        "Initiating simulation process for [scenario].",
+        "Simulation in progress for [scenario]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "optimize",
+      "patterns": [
+        "Optimize [process]",
+        "Enhance [process]",
+        "Improve efficiency of [process]"
+      ],
+      "responses": [
+        "Initiating optimization of [process]...",
+        "Optimizing [process]. This may take some time.",
+        "Improving efficiency of [process]...",
+        "Enhancing [process] for better performance."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "scientific-research",
+      "patterns": [
+        "Conduct scientific research",
+        "Perform scientific experiments",
+        "Scientific investigation"
+      ],
+      "responses": [
+        "Initiating scientific research...",
+        "Performing scientific experiments. Please standby.",
+        "Conducting scientific investigation.",
+        "Scientific research in progress."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "engineering-analysis",
+      "patterns": [
+        "Conduct engineering analysis",
+        "Engineering assessment",
+        "Perform engineering calculations"
+      ],
+      "responses": [
+        "Initiating engineering analysis...",
+        "Conducting engineering assessment. Please wait.",
+        "Performing engineering calculations.",
+        "Engineering analysis in progress."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "technical-diagnosis",
+      "patterns": [
+        "Diagnose technical issue",
+        "Technical troubleshooting",
+        "Identify problem with device"
+      ],
+      "responses": [
+        "Initiating technical diagnosis...",
+        "Troubleshooting technical issue. Please standby.",
+        "Diagnosing problem with device.",
+        "Technical diagnosis in progress."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "automate-process",
+      "patterns": [
+        "Automate [process]",
+        "Implement automation for [process]",
+        "Automation of [process]"
+      ],
+      "responses": [
+        "Automating [process]...",
+        "Implementing automation for [process].",
+        "Initiating process automation for [process].",
+        "Automation in progress for [process]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-market",
+      "patterns": [
+        "Analyze market trends",
+        "Market analysis",
+        "Market research"
+      ],
+      "responses": [
+        "Initiating market analysis...",
+        "Conducting market research. Please standby.",
+        "Analyzing market trends.",
+        "Market analysis in progress."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "forecast-demand",
+      "patterns": [
+        "Forecast demand for [product]",
+        "Predict demand of [product]",
+        "Demand forecasting for [product]"
+      ],
+      "responses": [
+        "Forecasting demand for [product]...",
+        "Predicting demand of [product].",
+        "Initiating demand forecasting for [product].",
+        "Demand forecasting in progress for [product]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "create-algorithm",
+      "patterns": [
+        "Create algorithm for [task]",
+        "Algorithm development for [task]",
+        "Design algorithm for [task]"
+      ],
+      "responses": [
+        "Creating algorithm for [task]...",
+        "Developing algorithm for [task].",
+        "Initiating algorithm design for [task].",
+        "Algorithm creation in progress for [task]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "analyze-performance",
+      "patterns": [
+        "Analyze performance metrics",
+        "Performance analysis",
+        "Evaluate performance"
+      ],
+      "responses": [
+        "Initiating performance analysis...",
+        "Analyzing performance metrics. Please standby.",
+        "Evaluating performance.",
+        "Performance analysis in progress."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-experiment",
+      "patterns": [
+        "Conduct experiment on [subject]",
+        "Experimentation with [subject]",
+        "Experimental study on [subject]"
+      ],
+      "responses": [
+        "Initiating experiment on [subject]...",
+        "Conducting experimentation with [subject].",
+        "Initiating experimental study on [subject].",
+        "Experiment in progress on [subject]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-software",
+      "patterns": [
+        "Develop software for [purpose]",
+        "Software development for [purpose]",
+        "Create program for [purpose]"
+      ],
+      "responses": [
+        "Developing software for [purpose]...",
+        "Initiating software development for [purpose].",
+        "Creating program for [purpose].",
+        "Software development in progress for [purpose]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "perform-risk-analysis",
+      "patterns": [
+        "Perform risk analysis for [project]",
+        "Risk assessment for [project]",
+        "Analyze risks of [project]"
+      ],
+      "responses": [
+        "Performing risk analysis for [project]...",
+        "Initiating risk assessment for [project].",
+        "Analyzing risks of [project].",
+        "Risk analysis in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-experiment",
+      "patterns": [
+        "Design experiment to test [hypothesis]",
+        "Experiment design for [hypothesis]",
+        "Create experimental setup for [hypothesis]"
+      ],
+      "responses": [
+        "Designing experiment to test [hypothesis]...",
+        "Initiating experiment design for [hypothesis].",
+        "Creating experimental setup for [hypothesis].",
+        "Experiment design in progress for [hypothesis]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-model",
+      "patterns": [
+        "Develop model for [system]",
+        "Model development for [system]",
+        "Create mathematical model for [system]"
+      ],
+      "responses": [
+        "Developing model for [system]...",
+        "Initiating model development for [system].",
+        "Creating mathematical model for [system].",
+        "Model development in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-design",
+      "patterns": [
+        "Evaluate design of [product]",
+        "Design assessment for [product]",
+        "Assess [product] design"
+      ],
+      "responses": [
+        "Evaluating design of [product]...",
+        "Initiating design assessment for [product].",
+        "Assessing [product] design.",
+        "Design evaluation in progress for [product]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "perform-analysis",
+      "patterns": [
+        "Perform analysis on [dataset]",
+        "Analysis of [dataset]",
+        "Data analysis for [dataset]"
+      ],
+      "responses": [
+        "Performing analysis on [dataset]...",
+        "Initiating analysis of [dataset].",
+        "Conducting data analysis for [dataset].",
+        "Analysis in progress for [dataset]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-strategy",
+      "patterns": [
+        "Develop strategy for [objective]",
+        "Strategy development for [objective]",
+        "Create plan for [objective]"
+      ],
+      "responses": [
+        "Developing strategy for [objective]...",
+        "Initiating strategy development for [objective].",
+        "Creating plan for [objective].",
+        "Strategy development in progress for [objective]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "optimize-performance",
+      "patterns": [
+        "Optimize performance of [system]",
+        "Performance optimization for [system]",
+        "Improve efficiency of [system]"
+      ],
+      "responses": [
+        "Optimizing performance of [system]...",
+        "Initiating performance optimization for [system].",
+        "Improving efficiency of [system].",
+        "Performance optimization in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "conduct-survey",
+      "patterns": [
+        "Conduct survey on [topic]",
+        "Survey [topic]",
+        "Surveying [topic]"
+      ],
+      "responses": [
+        "Conducting survey on [topic]...",
+        "Initiating survey on [topic].",
+        "Surveying [topic].",
+        "Survey in progress on [topic]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-code",
+      "patterns": [
+        "Analyze code for [project]",
+        "Code analysis for [project]",
+        "Review code of [project]"
+      ],
+      "responses": [
+        "Analyzing code for [project]...",
+        "Initiating code analysis for [project].",
+        "Reviewing code of [project].",
+        "Code analysis in progress for [project]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-examination",
+      "patterns": [
+        "Conduct examination for [subject]",
+        "Examination on [subject]",
+        "Examining [subject]"
+      ],
+      "responses": [
+        "Conducting examination for [subject]...",
+        "Initiating examination on [subject].",
+        "Examining [subject].",
+        "Examination in progress for [subject]."
+      ],
+      "context": "education"
+    },
+    {
+      "tag": "analyze-risk",
+      "patterns": [
+        "Analyze risk factors for [project]",
+        "Risk analysis for [project]",
+        "Assess risks of [project]"
+      ],
+      "responses": [
+        "Analyzing risk factors for [project]...",
+        "Initiating risk analysis for [project].",
+        "Assessing risks of [project].",
+        "Risk analysis in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-protocol",
+      "patterns": [
+        "Develop protocol for [procedure]",
+        "Protocol development for [procedure]",
+        "Create procedure protocol for [procedure]"
+      ],
+      "responses": [
+        "Developing protocol for [procedure]...",
+        "Initiating protocol development for [procedure].",
+        "Creating procedure protocol for [procedure].",
+        "Protocol development in progress for [procedure]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "analyze-trend",
+      "patterns": [
+        "Analyze trend data",
+        "Trend analysis",
+        "Evaluate trends"
+      ],
+      "responses": [
+        "Analyzing trend data...",
+        "Initiating trend analysis.",
+        "Evaluating trends.",
+        "Trend analysis in progress."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-interface",
+      "patterns": [
+        "Design user interface for [software]",
+        "User interface design for [software]",
+        "Create UI for [software]"
+      ],
+      "responses": [
+        "Designing user interface for [software]...",
+        "Initiating user interface design for [software].",
+        "Creating UI for [software].",
+        "User interface design in progress for [software]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-poll",
+      "patterns": [
+        "Conduct poll on [issue]",
+        "Polling on [issue]",
+        "Poll [issue]"
+      ],
+      "responses": [
+        "Conducting poll on [issue]...",
+        "Initiating polling on [issue].",
+        "Polling on [issue].",
+        "Poll in progress on [issue]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "perform-forecast",
+      "patterns": [
+        "Perform forecast for [parameter]",
+        "Forecasting [parameter]",
+        "Predict [parameter]"
+      ],
+      "responses": [
+        "Performing forecast for [parameter]...",
+        "Initiating forecasting [parameter].",
+        "Predicting [parameter].",
+        "Forecast in progress for [parameter]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-prototype",
+      "patterns": [
+        "Develop prototype for [product]",
+        "Prototype development for [product]",
+        "Create model of [product]"
+      ],
+      "responses": [
+        "Developing prototype for [product]...",
+        "Initiating prototype development for [product].",
+        "Creating model of [product].",
+        "Prototype development in progress for [product]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-performance",
+      "patterns": [
+        "Evaluate performance of [system]",
+        "Performance evaluation for [system]",
+        "Assess performance of [system]"
+      ],
+      "responses": [
+        "Evaluating performance of [system]...",
+        "Initiating performance evaluation for [system].",
+        "Assessing performance of [system].",
+        "Performance evaluation in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "conduct-exploration",
+      "patterns": [
+        "Conduct exploration of [topic]",
+        "Exploration on [topic]",
+        "Explore [topic]"
+      ],
+      "responses": [
+        "Conducting exploration of [topic]...",
+        "Initiating exploration on [topic].",
+        "Exploring [topic].",
+        "Exploration in progress on [topic]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-policy",
+      "patterns": [
+        "Develop policy for [issue]",
+        "Policy development for [issue]",
+        "Create guidelines for [issue]"
+      ],
+      "responses": [
+        "Developing policy for [issue]...",
+        "Initiating policy development for [issue].",
+        "Creating guidelines for [issue].",
+        "Policy development in progress for [issue]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-impact",
+      "patterns": [
+        "Analyze impact of [factor]",
+        "Impact analysis for [factor]",
+        "Assess impact of [factor]"
+      ],
+      "responses": [
+        "Analyzing impact of [factor]...",
+        "Initiating impact analysis for [factor].",
+        "Assessing impact of [factor].",
+        "Impact analysis in progress for [factor]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "create-prototype",
+      "patterns": [
+        "Create prototype for [idea]",
+        "Prototype creation for [idea]",
+        "Build model of [idea]"
+      ],
+      "responses": [
+        "Creating prototype for [idea]...",
+        "Initiating prototype creation for [idea].",
+        "Building model of [idea].",
+        "Prototype creation in progress for [idea]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-strategy",
+      "patterns": [
+        "Evaluate strategy for [objective]",
+        "Strategy evaluation for [objective]",
+        "Assess plan for [objective]"
+      ],
+      "responses": [
+        "Evaluating strategy for [objective]...",
+        "Initiating strategy evaluation for [objective].",
+        "Assessing plan for [objective].",
+        "Strategy evaluation in progress for [objective]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-analysis",
+      "patterns": [
+        "Conduct analysis on [topic]",
+        "Analysis of [topic]",
+        "Data analysis for [topic]"
+      ],
+      "responses": [
+        "Conducting analysis on [topic]...",
+        "Initiating analysis of [topic].",
+        "Performing data analysis for [topic].",
+        "Analysis in progress for [topic]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-experience",
+      "patterns": [
+        "Design user experience for [application]",
+        "User experience design for [application]",
+        "Create UX for [application]"
+      ],
+      "responses": [
+        "Designing user experience for [application]...",
+        "Initiating user experience design for [application].",
+        "Creating UX for [application].",
+        "User experience design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-research",
+      "patterns": [
+        "Conduct research on [topic]",
+        "Research [topic]",
+        "Researching [topic]"
+      ],
+      "responses": [
+        "Conducting research on [topic]...",
+        "Initiating research on [topic].",
+        "Researching [topic].",
+        "Research in progress on [topic]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-test",
+      "patterns": [
+        "Develop test for [software]",
+        "Test development for [software]",
+        "Create software test for [software]"
+      ],
+      "responses": [
+        "Developing test for [software]...",
+        "Initiating test development for [software].",
+        "Creating software test for [software].",
+        "Test development in progress for [software]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-effectiveness",
+      "patterns": [
+        "Evaluate effectiveness of [strategy]",
+        "Effectiveness evaluation for [strategy]",
+        "Assess effectiveness of [strategy]"
+      ],
+      "responses": [
+        "Evaluating effectiveness of [strategy]...",
+        "Initiating effectiveness evaluation for [strategy].",
+        "Assessing effectiveness of [strategy].",
+        "Effectiveness evaluation in progress for [strategy]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-pattern",
+      "patterns": [
+        "Analyze pattern in [data]",
+        "Pattern analysis for [data]",
+        "Identify patterns in [data]"
+      ],
+      "responses": [
+        "Analyzing pattern in [data]...",
+        "Initiating pattern analysis for [data].",
+        "Identifying patterns in [data].",
+        "Pattern analysis in progress for [data]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-framework",
+      "patterns": [
+        "Develop framework for [application]",
+        "Framework development for [application]",
+        "Create architecture for [application]"
+      ],
+      "responses": [
+        "Developing framework for [application]...",
+        "Initiating framework development for [application].",
+        "Creating architecture for [application].",
+        "Framework development in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-impact",
+      "patterns": [
+        "Evaluate impact of [project]",
+        "Impact evaluation for [project]",
+        "Assess impact of [project]"
+      ],
+      "responses": [
+        "Evaluating impact of [project]...",
+        "Initiating impact evaluation for [project].",
+        "Assessing impact of [project].",
+        "Impact evaluation in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-trial",
+      "patterns": [
+        "Conduct trial for [procedure]",
+        "Trial of [procedure]",
+        "Trial run for [procedure]"
+      ],
+      "responses": [
+        "Conducting trial for [procedure]...",
+        "Initiating trial of [procedure].",
+        "Running trial for [procedure].",
+        "Trial in progress for [procedure]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "design-system",
+      "patterns": [
+        "Design system for [application]",
+        "System design for [application]",
+        "Create system architecture for [application]"
+      ],
+      "responses": [
+        "Designing system for [application]...",
+        "Initiating system design for [application].",
+        "Creating system architecture for [application].",
+        "System design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-feasibility",
+      "patterns": [
+        "Evaluate feasibility of [project]",
+        "Feasibility evaluation for [project]",
+        "Assess feasibility of [project]"
+      ],
+      "responses": [
+        "Evaluating feasibility of [project]...",
+        "Initiating feasibility evaluation for [project].",
+        "Assessing feasibility of [project].",
+        "Feasibility evaluation in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-campaign",
+      "patterns": [
+        "Develop campaign for [product]",
+        "Campaign development for [product]",
+        "Create marketing campaign for [product]"
+      ],
+      "responses": [
+        "Developing campaign for [product]...",
+        "Initiating campaign development for [product].",
+        "Creating marketing campaign for [product].",
+        "Campaign development in progress for [product]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "evaluate-accuracy",
+      "patterns": [
+        "Evaluate accuracy of [model]",
+        "Accuracy evaluation for [model]",
+        "Assess accuracy of [model]"
+      ],
+      "responses": [
+        "Evaluating accuracy of [model]...",
+        "Initiating accuracy evaluation for [model].",
+        "Assessing accuracy of [model].",
+        "Accuracy evaluation in progress for [model]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "develop-training",
+      "patterns": [
+        "Develop training program for [skill]",
+        "Training development for [skill]",
+        "Create training curriculum for [skill]"
+      ],
+      "responses": [
+        "Developing training program for [skill]...",
+        "Initiating training development for [skill].",
+        "Creating training curriculum for [skill].",
+        "Training development in progress for [skill]."
+      ],
+      "context": "education"
+    },
+    {
+      "tag": "analyze-behavior",
+      "patterns": [
+        "Analyze behavior patterns",
+        "Behavior analysis",
+        "Study behavior trends"
+      ],
+      "responses": [
+        "Analyzing behavior patterns...",
+        "Initiating behavior analysis.",
+        "Studying behavior trends.",
+        "Behavior analysis in progress."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-security",
+      "patterns": [
+        "Develop security measures for [system]",
+        "Security development for [system]",
+        "Create security protocols for [system]"
+      ],
+      "responses": [
+        "Developing security measures for [system]...",
+        "Initiating security development for [system].",
+        "Creating security protocols for [system].",
+        "Security development in progress for [system]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-impact",
+      "patterns": [
+        "Evaluate impact of [policy]",
+        "Impact evaluation for [policy]",
+        "Assess impact of [policy]"
+      ],
+      "responses": [
+        "Evaluating impact of [policy]...",
+        "Initiating impact evaluation for [policy].",
+        "Assessing impact of [policy].",
+        "Impact evaluation in progress for [policy]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-simulation",
+      "patterns": [
+        "Conduct simulation for [scenario]",
+        "Simulation of [scenario]",
+        "Simulate [scenario]"
+      ],
+      "responses": [
+        "Conducting simulation for [scenario]...",
+        "Initiating simulation of [scenario].",
+        "Simulating [scenario].",
+        "Simulation in progress for [scenario]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-usage",
+      "patterns": [
+        "Analyze usage data",
+        "Usage analysis",
+        "Study usage patterns"
+      ],
+      "responses": [
+        "Analyzing usage data...",
+        "Initiating usage analysis.",
+        "Studying usage patterns.",
+        "Usage analysis in progress."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "develop-algorithm",
+      "patterns": [
+        "Develop algorithm for [task]",
+        "Algorithm development for [task]",
+        "Create algorithm for [task]"
+      ],
+      "responses": [
+        "Developing algorithm for [task]...",
+        "Initiating algorithm development for [task].",
+        "Creating algorithm for [task].",
+        "Algorithm development in progress for [task]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-efficiency",
+      "patterns": [
+        "Evaluate efficiency of [process]",
+        "Efficiency evaluation for [process]",
+        "Assess efficiency of [process]"
+      ],
+      "responses": [
+        "Evaluating efficiency of [process]...",
+        "Initiating efficiency evaluation for [process].",
+        "Assessing efficiency of [process].",
+        "Efficiency evaluation in progress for [process]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "design-interface",
+      "patterns": [
+        "Design user interface for [product]",
+        "User interface design for [product]",
+        "Create UI for [product]"
+      ],
+      "responses": [
+        "Designing user interface for [product]...",
+        "Initiating user interface design for [product].",
+        "Creating UI for [product].",
+        "User interface design in progress for [product]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-experiment",
+      "patterns": [
+        "Conduct experiment on [subject]",
+        "Experimentation with [subject]",
+        "Experimental study on [subject]"
+      ],
+      "responses": [
+        "Conducting experiment on [subject]...",
+        "Initiating experimentation with [subject].",
+        "Initiating experimental study on [subject].",
+        "Experiment in progress on [subject]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-software",
+      "patterns": [
+        "Develop software for [purpose]",
+        "Software development for [purpose]",
+        "Create program for [purpose]"
+      ],
+      "responses": [
+        "Developing software for [purpose]...",
+        "Initiating software development for [purpose].",
+        "Creating program for [purpose].",
+        "Software development in progress for [purpose]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "perform-risk-analysis",
+      "patterns": [
+        "Perform risk analysis for [project]",
+        "Risk assessment for [project]",
+        "Analyze risks of [project]"
+      ],
+      "responses": [
+        "Performing risk analysis for [project]...",
+        "Initiating risk assessment for [project].",
+        "Analyzing risks of [project].",
+        "Risk analysis in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-testing",
+      "patterns": [
+        "Conduct testing for [system]",
+        "Testing of [system]",
+        "Test [system]"
+      ],
+      "responses": [
+        "Conducting testing for [system]...",
+        "Initiating testing of [system].",
+        "Testing [system].",
+        "Testing in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-audit",
+      "patterns": [
+        "Analyze audit data",
+        "Audit analysis",
+        "Study audit reports"
+      ],
+      "responses": [
+        "Analyzing audit data...",
+        "Initiating audit analysis.",
+        "Studying audit reports.",
+        "Audit analysis in progress."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-procedure",
+      "patterns": [
+        "Develop procedure for [task]",
+        "Procedure development for [task]",
+        "Create protocol for [task]"
+      ],
+      "responses": [
+        "Developing procedure for [task]...",
+        "Initiating procedure development for [task].",
+        "Creating protocol for [task].",
+        "Procedure development in progress for [task]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-competition",
+      "patterns": [
+        "Analyze competition in [market]",
+        "Competition analysis for [market]",
+        "Study competitors in [market]"
+      ],
+      "responses": [
+        "Analyzing competition in [market]...",
+        "Initiating competition analysis for [market].",
+        "Studying competitors in [market].",
+        "Competition analysis in progress for [market]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-system",
+      "patterns": [
+        "Design system for [application]",
+        "System design for [application]",
+        "Create system architecture for [application]"
+      ],
+      "responses": [
+        "Designing system for [application]...",
+        "Initiating system design for [application].",
+        "Creating system architecture for [application].",
+        "System design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-poll",
+      "patterns": [
+        "Conduct poll on [issue]",
+        "Polling on [issue]",
+        "Poll [issue]"
+      ],
+      "responses": [
+        "Conducting poll on [issue]...",
+        "Initiating polling on [issue].",
+        "Polling on [issue].",
+        "Poll in progress on [issue]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "perform-forecast",
+      "patterns": [
+        "Perform forecast for [parameter]",
+        "Forecasting [parameter]",
+        "Predict [parameter]"
+      ],
+      "responses": [
+        "Performing forecast for [parameter]...",
+        "Initiating forecasting [parameter].",
+        "Predicting [parameter].",
+        "Forecast in progress for [parameter]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-prototype",
+      "patterns": [
+        "Develop prototype for [product]",
+        "Prototype development for [product]",
+        "Create model of [product]"
+      ],
+      "responses": [
+        "Developing prototype for [product]...",
+        "Initiating prototype development for [product].",
+        "Creating model of [product].",
+        "Prototype development in progress for [product]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-performance",
+      "patterns": [
+        "Evaluate performance of [system]",
+        "Performance evaluation for [system]",
+        "Assess performance of [system]"
+      ],
+      "responses": [
+        "Evaluating performance of [system]...",
+        "Initiating performance evaluation for [system].",
+        "Assessing performance of [system].",
+        "Performance evaluation in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "conduct-exploration",
+      "patterns": [
+        "Conduct exploration of [topic]",
+        "Exploration on [topic]",
+        "Explore [topic]"
+      ],
+      "responses": [
+        "Conducting exploration of [topic]...",
+        "Initiating exploration on [topic].",
+        "Exploring [topic].",
+        "Exploration in progress on [topic]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-policy",
+      "patterns": [
+        "Develop policy for [issue]",
+        "Policy development for [issue]",
+        "Create guidelines for [issue]"
+      ],
+      "responses": [
+        "Developing policy for [issue]...",
+        "Initiating policy development for [issue].",
+        "Creating guidelines for [issue].",
+        "Policy development in progress for [issue]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-impact",
+      "patterns": [
+        "Analyze impact of [factor]",
+        "Impact analysis for [factor]",
+        "Assess impact of [factor]"
+      ],
+      "responses": [
+        "Analyzing impact of [factor]...",
+        "Initiating impact analysis for [factor].",
+        "Assessing impact of [factor].",
+        "Impact analysis in progress for [factor]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "create-prototype",
+      "patterns": [
+        "Create prototype for [idea]",
+        "Prototype creation for [idea]",
+        "Build model of [idea]"
+      ],
+      "responses": [
+        "Creating prototype for [idea]...",
+        "Initiating prototype creation for [idea].",
+        "Building model of [idea].",
+        "Prototype creation in progress for [idea]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-strategy",
+      "patterns": [
+        "Evaluate strategy for [objective]",
+        "Strategy evaluation for [objective]",
+        "Assess plan for [objective]"
+      ],
+      "responses": [
+        "Evaluating strategy for [objective]...",
+        "Initiating strategy evaluation for [objective].",
+        "Assessing plan for [objective].",
+        "Strategy evaluation in progress for [objective]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-analysis",
+      "patterns": [
+        "Conduct analysis on [topic]",
+        "Analysis of [topic]",
+        "Data analysis for [topic]"
+      ],
+      "responses": [
+        "Conducting analysis on [topic]...",
+        "Initiating analysis of [topic].",
+        "Performing data analysis for [topic].",
+        "Analysis in progress for [topic]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-experience",
+      "patterns": [
+        "Design user experience for [application]",
+        "User experience design for [application]",
+        "Create UX for [application]"
+      ],
+      "responses": [
+        "Designing user experience for [application]...",
+        "Initiating user experience design for [application].",
+        "Creating UX for [application].",
+        "User experience design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-research",
+      "patterns": [
+        "Conduct research on [topic]",
+        "Research [topic]",
+        "Researching [topic]"
+      ],
+      "responses": [
+        "Conducting research on [topic]...",
+        "Initiating research on [topic].",
+        "Researching [topic].",
+        "Research in progress on [topic]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-test",
+      "patterns": [
+        "Develop test for [software]",
+        "Test development for [software]",
+        "Create software test for [software]"
+      ],
+      "responses": [
+        "Developing test for [software]...",
+        "Initiating test development for [software].",
+        "Creating software test for [software].",
+        "Test development in progress for [software]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-effectiveness",
+      "patterns": [
+        "Evaluate effectiveness of [strategy]",
+        "Effectiveness evaluation for [strategy]",
+        "Assess effectiveness of [strategy]"
+      ],
+      "responses": [
+        "Evaluating effectiveness of [strategy]...",
+        "Initiating effectiveness evaluation for [strategy].",
+        "Assessing effectiveness of [strategy].",
+        "Effectiveness evaluation in progress for [strategy]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-pattern",
+      "patterns": [
+        "Analyze pattern in [data]",
+        "Pattern analysis for [data]",
+        "Identify patterns in [data]"
+      ],
+      "responses": [
+        "Analyzing pattern in [data]...",
+        "Initiating pattern analysis for [data].",
+        "Identifying patterns in [data].",
+        "Pattern analysis in progress for [data]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-framework",
+      "patterns": [
+        "Develop framework for [application]",
+        "Framework development for [application]",
+        "Create architecture for [application]"
+      ],
+      "responses": [
+        "Developing framework for [application]...",
+        "Initiating framework development for [application].",
+        "Creating architecture for [application].",
+        "Framework development in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-impact",
+      "patterns": [
+        "Evaluate impact of [project]",
+        "Impact evaluation for [project]",
+        "Assess impact of [project]"
+      ],
+      "responses": [
+        "Evaluating impact of [project]...",
+        "Initiating impact evaluation for [project].",
+        "Assessing impact of [project].",
+        "Impact evaluation in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-trial",
+      "patterns": [
+        "Conduct trial for [procedure]",
+        "Trial of [procedure]",
+        "Trial run for [procedure]"
+      ],
+      "responses": [
+        "Conducting trial for [procedure]...",
+        "Initiating trial of [procedure].",
+        "Running trial for [procedure].",
+        "Trial in progress for [procedure]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "design-system",
+      "patterns": [
+        "Design system for [application]",
+        "System design for [application]",
+        "Create system architecture for [application]"
+      ],
+      "responses": [
+        "Designing system for [application]...",
+        "Initiating system design for [application].",
+        "Creating system architecture for [application].",
+        "System design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-feasibility",
+      "patterns": [
+        "Evaluate feasibility of [project]",
+        "Feasibility evaluation for [project]",
+        "Assess feasibility of [project]"
+      ],
+      "responses": [
+        "Evaluating feasibility of [project]...",
+        "Initiating feasibility evaluation for [project].",
+        "Assessing feasibility of [project].",
+        "Feasibility evaluation in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-campaign",
+      "patterns": [
+        "Develop campaign for [product]",
+        "Campaign development for [product]",
+        "Create marketing campaign for [product]"
+      ],
+      "responses": [
+        "Developing campaign for [product]...",
+        "Initiating campaign development for [product].",
+        "Creating marketing campaign for [product].",
+        "Campaign development in progress for [product]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "evaluate-accuracy",
+      "patterns": [
+        "Evaluate accuracy of [model]",
+        "Accuracy evaluation for [model]",
+        "Assess accuracy of [model]"
+      ],
+      "responses": [
+        "Evaluating accuracy of [model]...",
+        "Initiating accuracy evaluation for [model].",
+        "Assessing accuracy of [model].",
+        "Accuracy evaluation in progress for [model]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "develop-training",
+      "patterns": [
+        "Develop training program for [skill]",
+        "Training development for [skill]",
+        "Create training curriculum for [skill]"
+      ],
+      "responses": [
+        "Developing training program for [skill]...",
+        "Initiating training development for [skill].",
+        "Creating training curriculum for [skill].",
+        "Training development in progress for [skill]."
+      ],
+      "context": "education"
+    },
+    {
+      "tag": "analyze-behavior",
+      "patterns": [
+        "Analyze behavior patterns",
+        "Behavior analysis",
+        "Study behavior trends"
+      ],
+      "responses": [
+        "Analyzing behavior patterns...",
+        "Initiating behavior analysis.",
+        "Studying behavior trends.",
+        "Behavior analysis in progress."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-security",
+      "patterns": [
+        "Develop security measures for [system]",
+        "Security development for [system]",
+        "Create security protocols for [system]"
+      ],
+      "responses": [
+        "Developing security measures for [system]...",
+        "Initiating security development for [system].",
+        "Creating security protocols for [system].",
+        "Security development in progress for [system]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-impact",
+      "patterns": [
+        "Evaluate impact of [policy]",
+        "Impact evaluation for [policy]",
+        "Assess impact of [policy]"
+      ],
+      "responses": [
+        "Evaluating impact of [policy]...",
+        "Initiating impact evaluation for [policy].",
+        "Assessing impact of [policy].",
+        "Impact evaluation in progress for [policy]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-simulation",
+      "patterns": [
+        "Conduct simulation for [scenario]",
+        "Simulation of [scenario]",
+        "Simulate [scenario]"
+      ],
+      "responses": [
+        "Conducting simulation for [scenario]...",
+        "Initiating simulation of [scenario].",
+        "Simulating [scenario].",
+        "Simulation in progress for [scenario]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-usage",
+      "patterns": [
+        "Analyze usage data",
+        "Usage analysis",
+        "Study usage patterns"
+      ],
+      "responses": [
+        "Analyzing usage data...",
+        "Initiating usage analysis.",
+        "Studying usage patterns.",
+        "Usage analysis in progress."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "develop-algorithm",
+      "patterns": [
+        "Develop algorithm for [task]",
+        "Algorithm development for [task]",
+        "Create algorithm for [task]"
+      ],
+      "responses": [
+        "Developing algorithm for [task]...",
+        "Initiating algorithm development for [task].",
+        "Creating algorithm for [task].",
+        "Algorithm development in progress for [task]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-efficiency",
+      "patterns": [
+        "Evaluate efficiency of [process]",
+        "Efficiency evaluation for [process]",
+        "Assess efficiency of [process]"
+      ],
+      "responses": [
+        "Evaluating efficiency of [process]...",
+        "Initiating efficiency evaluation for [process].",
+        "Assessing efficiency of [process].",
+        "Efficiency evaluation in progress for [process]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "design-interface",
+      "patterns": [
+        "Design user interface for [product]",
+        "User interface design for [product]",
+        "Create UI for [product]"
+      ],
+      "responses": [
+        "Designing user interface for [product]...",
+        "Initiating user interface design for [product].",
+        "Creating UI for [product].",
+        "User interface design in progress for [product]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-experiment",
+      "patterns": [
+        "Conduct experiment on [subject]",
+        "Experimentation with [subject]",
+        "Experimental study on [subject]"
+      ],
+      "responses": [
+        "Conducting experiment on [subject]...",
+        "Initiating experimentation with [subject].",
+        "Initiating experimental study on [subject].",
+        "Experiment in progress on [subject]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-software",
+      "patterns": [
+        "Develop software for [purpose]",
+        "Software development for [purpose]",
+        "Create program for [purpose]"
+      ],
+      "responses": [
+        "Developing software for [purpose]...",
+        "Initiating software development for [purpose].",
+        "Creating program for [purpose].",
+        "Software development in progress for [purpose]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "perform-risk-analysis",
+      "patterns": [
+        "Perform risk analysis for [project]",
+        "Risk assessment for [project]",
+        "Analyze risks of [project]"
+      ],
+      "responses": [
+        "Performing risk analysis for [project]...",
+        "Initiating risk assessment for [project].",
+        "Analyzing risks of [project].",
+        "Risk analysis in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-testing",
+      "patterns": [
+        "Conduct testing for [system]",
+        "Testing of [system]",
+        "Test [system]"
+      ],
+      "responses": [
+        "Conducting testing for [system]...",
+        "Initiating testing of [system].",
+        "Testing [system].",
+        "Testing in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-audit",
+      "patterns": [
+        "Analyze audit data",
+        "Audit analysis",
+        "Study audit reports"
+      ],
+      "responses": [
+        "Analyzing audit data...",
+        "Initiating audit analysis.",
+        "Studying audit reports.",
+        "Audit analysis in progress."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-procedure",
+      "patterns": [
+        "Develop procedure for [task]",
+        "Procedure development for [task]",
+        "Create protocol for [task]"
+      ],
+      "responses": [
+        "Developing procedure for [task]...",
+        "Initiating procedure development for [task].",
+        "Creating protocol for [task].",
+        "Procedure development in progress for [task]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-competition",
+      "patterns": [
+        "Analyze competition in [market]",
+        "Competition analysis for [market]",
+        "Study competitors in [market]"
+      ],
+      "responses": [
+        "Analyzing competition in [market]...",
+        "Initiating competition analysis for [market].",
+        "Studying competitors in [market].",
+        "Competition analysis in progress for [market]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-system",
+      "patterns": [
+        "Design system for [application]",
+        "System design for [application]",
+        "Create system architecture for [application]"
+      ],
+      "responses": [
+        "Designing system for [application]...",
+        "Initiating system design for [application].",
+        "Creating system architecture for [application].",
+        "System design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-poll",
+      "patterns": [
+        "Conduct poll on [issue]",
+        "Polling on [issue]",
+        "Poll [issue]"
+      ],
+      "responses": [
+        "Conducting poll on [issue]...",
+        "Initiating polling on [issue].",
+        "Polling on [issue].",
+        "Poll in progress on [issue]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "perform-forecast",
+      "patterns": [
+        "Perform forecast for [parameter]",
+        "Forecasting [parameter]",
+        "Predict [parameter]"
+      ],
+      "responses": [
+        "Performing forecast for [parameter]...",
+        "Initiating forecasting [parameter].",
+        "Predicting [parameter].",
+        "Forecast in progress for [parameter]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-prototype",
+      "patterns": [
+        "Develop prototype for [product]",
+        "Prototype development for [product]",
+        "Create model of [product]"
+      ],
+      "responses": [
+        "Developing prototype for [product]...",
+        "Initiating prototype development for [product].",
+        "Creating model of [product].",
+        "Prototype development in progress for [product]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-performance",
+      "patterns": [
+        "Evaluate performance of [system]",
+        "Performance evaluation for [system]",
+        "Assess performance of [system]"
+      ],
+      "responses": [
+        "Evaluating performance of [system]...",
+        "Initiating performance evaluation for [system].",
+        "Assessing performance of [system].",
+        "Performance evaluation in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "conduct-exploration",
+      "patterns": [
+        "Conduct exploration of [topic]",
+        "Exploration on [topic]",
+        "Explore [topic]"
+      ],
+      "responses": [
+        "Conducting exploration of [topic]...",
+        "Initiating exploration on [topic].",
+        "Exploring [topic].",
+        "Exploration in progress on [topic]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-policy",
+      "patterns": [
+        "Develop policy for [issue]",
+        "Policy development for [issue]",
+        "Create guidelines for [issue]"
+      ],
+      "responses": [
+        "Developing policy for [issue]...",
+        "Initiating policy development for [issue].",
+        "Creating guidelines for [issue].",
+        "Policy development in progress for [issue]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-impact",
+      "patterns": [
+        "Analyze impact of [factor]",
+        "Impact analysis for [factor]",
+        "Assess impact of [factor]"
+      ],
+      "responses": [
+        "Analyzing impact of [factor]...",
+        "Initiating impact analysis for [factor].",
+        "Assessing impact of [factor].",
+        "Impact analysis in progress for [factor]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "create-prototype",
+      "patterns": [
+        "Create prototype for [idea]",
+        "Prototype creation for [idea]",
+        "Build model of [idea]"
+      ],
+      "responses": [
+        "Creating prototype for [idea]...",
+        "Initiating prototype creation for [idea].",
+        "Building model of [idea].",
+        "Prototype creation in progress for [idea]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-strategy",
+      "patterns": [
+        "Evaluate strategy for [objective]",
+        "Strategy evaluation for [objective]",
+        "Assess plan for [objective]"
+      ],
+      "responses": [
+        "Evaluating strategy for [objective]...",
+        "Initiating strategy evaluation for [objective].",
+        "Assessing plan for [objective].",
+        "Strategy evaluation in progress for [objective]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-analysis",
+      "patterns": [
+        "Conduct analysis on [topic]",
+        "Analysis of [topic]",
+        "Data analysis for [topic]"
+      ],
+      "responses": [
+        "Conducting analysis on [topic]...",
+        "Initiating analysis of [topic].",
+        "Performing data analysis for [topic].",
+        "Analysis in progress for [topic]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-experience",
+      "patterns": [
+        "Design user experience for [application]",
+        "User experience design for [application]",
+        "Create UX for [application]"
+      ],
+      "responses": [
+        "Designing user experience for [application]...",
+        "Initiating user experience design for [application].",
+        "Creating UX for [application].",
+        "User experience design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-research",
+      "patterns": [
+        "Conduct research on [topic]",
+        "Research [topic]",
+        "Researching [topic]"
+      ],
+      "responses": [
+        "Conducting research on [topic]...",
+        "Initiating research on [topic].",
+        "Researching [topic].",
+        "Research in progress on [topic]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-test",
+      "patterns": [
+        "Develop test for [software]",
+        "Test development for [software]",
+        "Create software test for [software]"
+      ],
+      "responses": [
+        "Developing test for [software]...",
+        "Initiating test development for [software].",
+        "Creating software test for [software].",
+        "Test development in progress for [software]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-effectiveness",
+      "patterns": [
+        "Evaluate effectiveness of [strategy]",
+        "Effectiveness evaluation for [strategy]",
+        "Assess effectiveness of [strategy]"
+      ],
+      "responses": [
+        "Evaluating effectiveness of [strategy]...",
+        "Initiating effectiveness evaluation for [strategy].",
+        "Assessing effectiveness of [strategy].",
+        "Effectiveness evaluation in progress for [strategy]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-pattern",
+      "patterns": [
+        "Analyze pattern in [data]",
+        "Pattern analysis for [data]",
+        "Identify patterns in [data]"
+      ],
+      "responses": [
+        "Analyzing pattern in [data]...",
+        "Initiating pattern analysis for [data].",
+        "Identifying patterns in [data].",
+        "Pattern analysis in progress for [data]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-framework",
+      "patterns": [
+        "Develop framework for [application]",
+        "Framework development for [application]",
+        "Create architecture for [application]"
+      ],
+      "responses": [
+        "Developing framework for [application]...",
+        "Initiating framework development for [application].",
+        "Creating architecture for [application].",
+        "Framework development in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-impact",
+      "patterns": [
+        "Evaluate impact of [project]",
+        "Impact evaluation for [project]",
+        "Assess impact of [project]"
+      ],
+      "responses": [
+        "Evaluating impact of [project]...",
+        "Initiating impact evaluation for [project].",
+        "Assessing impact of [project].",
+        "Impact evaluation in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-trial",
+      "patterns": [
+        "Conduct trial for [procedure]",
+        "Trial of [procedure]",
+        "Trial run for [procedure]"
+      ],
+      "responses": [
+        "Conducting trial for [procedure]...",
+        "Initiating trial of [procedure].",
+        "Running trial for [procedure].",
+        "Trial in progress for [procedure]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "design-system",
+      "patterns": [
+        "Design system for [application]",
+        "System design for [application]",
+        "Create system architecture for [application]"
+      ],
+      "responses": [
+        "Designing system for [application]...",
+        "Initiating system design for [application].",
+        "Creating system architecture for [application].",
+        "System design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-feasibility",
+      "patterns": [
+        "Evaluate feasibility of [project]",
+        "Feasibility evaluation for [project]",
+        "Assess feasibility of [project]"
+      ],
+      "responses": [
+        "Evaluating feasibility of [project]...",
+        "Initiating feasibility evaluation for [project].",
+        "Assessing feasibility of [project].",
+        "Feasibility evaluation in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-campaign",
+      "patterns": [
+        "Develop campaign for [product]",
+        "Campaign development for [product]",
+        "Create marketing campaign for [product]"
+      ],
+      "responses": [
+        "Developing campaign for [product]...",
+        "Initiating campaign development for [product].",
+        "Creating marketing campaign for [product].",
+        "Campaign development in progress for [product]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "evaluate-accuracy",
+      "patterns": [
+        "Evaluate accuracy of [model]",
+        "Accuracy evaluation for [model]",
+        "Assess accuracy of [model]"
+      ],
+      "responses": [
+        "Evaluating accuracy of [model]...",
+        "Initiating accuracy evaluation for [model].",
+        "Assessing accuracy of [model].",
+        "Accuracy evaluation in progress for [model]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "develop-training",
+      "patterns": [
+        "Develop training program for [skill]",
+        "Training development for [skill]",
+        "Create training curriculum for [skill]"
+      ],
+      "responses": [
+        "Developing training program for [skill]...",
+        "Initiating training development for [skill].",
+        "Creating training curriculum for [skill].",
+        "Training development in progress for [skill]."
+      ],
+      "context": "education"
+    },
+    {
+      "tag": "analyze-behavior",
+      "patterns": [
+        "Analyze behavior patterns",
+        "Behavior analysis",
+        "Study behavior trends"
+      ],
+      "responses": [
+        "Analyzing behavior patterns...",
+        "Initiating behavior analysis.",
+        "Studying behavior trends.",
+        "Behavior analysis in progress."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-security",
+      "patterns": [
+        "Develop security measures for [system]",
+        "Security development for [system]",
+        "Create security protocols for [system]"
+      ],
+      "responses": [
+        "Developing security measures for [system]...",
+        "Initiating security development for [system].",
+        "Creating security protocols for [system].",
+        "Security development in progress for [system]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-impact",
+      "patterns": [
+        "Evaluate impact of [policy]",
+        "Impact evaluation for [policy]",
+        "Assess impact of [policy]"
+      ],
+      "responses": [
+        "Evaluating impact of [policy]...",
+        "Initiating impact evaluation for [policy].",
+        "Assessing impact of [policy].",
+        "Impact evaluation in progress for [policy]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-simulation",
+      "patterns": [
+        "Conduct simulation for [scenario]",
+        "Simulation of [scenario]",
+        "Simulate [scenario]"
+      ],
+      "responses": [
+        "Conducting simulation for [scenario]...",
+        "Initiating simulation of [scenario].",
+        "Simulating [scenario].",
+        "Simulation in progress for [scenario]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-usage",
+      "patterns": [
+        "Analyze usage data",
+        "Usage analysis",
+        "Study usage patterns"
+      ],
+      "responses": [
+        "Analyzing usage data...",
+        "Initiating usage analysis.",
+        "Studying usage patterns.",
+        "Usage analysis in progress."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "develop-algorithm",
+      "patterns": [
+        "Develop algorithm for [task]",
+        "Algorithm development for [task]",
+        "Create algorithm for [task]"
+      ],
+      "responses": [
+        "Developing algorithm for [task]...",
+        "Initiating algorithm development for [task].",
+        "Creating algorithm for [task].",
+        "Algorithm development in progress for [task]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-efficiency",
+      "patterns": [
+        "Evaluate efficiency of [process]",
+        "Efficiency evaluation for [process]",
+        "Assess efficiency of [process]"
+      ],
+      "responses": [
+        "Evaluating efficiency of [process]...",
+        "Initiating efficiency evaluation for [process].",
+        "Assessing efficiency of [process].",
+        "Efficiency evaluation in progress for [process]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "design-interface",
+      "patterns": [
+        "Design user interface for [product]",
+        "User interface design for [product]",
+        "Create UI for [product]"
+      ],
+      "responses": [
+        "Designing user interface for [product]...",
+        "Initiating user interface design for [product].",
+        "Creating UI for [product].",
+        "User interface design in progress for [product]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-experiment",
+      "patterns": [
+        "Conduct experiment on [subject]",
+        "Experimentation with [subject]",
+        "Experimental study on [subject]"
+      ],
+      "responses": [
+        "Conducting experiment on [subject]...",
+        "Initiating experimentation with [subject].",
+        "Initiating experimental study on [subject].",
+        "Experiment in progress on [subject]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-software",
+      "patterns": [
+        "Develop software for [purpose]",
+        "Software development for [purpose]",
+        "Create program for [purpose]"
+      ],
+      "responses": [
+        "Developing software for [purpose]...",
+        "Initiating software development for [purpose].",
+        "Creating program for [purpose].",
+        "Software development in progress for [purpose]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "perform-risk-analysis",
+      "patterns": [
+        "Perform risk analysis for [project]",
+        "Risk assessment for [project]",
+        "Analyze risks of [project]"
+      ],
+      "responses": [
+        "Performing risk analysis for [project]...",
+        "Initiating risk assessment for [project].",
+        "Analyzing risks of [project].",
+        "Risk analysis in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-testing",
+      "patterns": [
+        "Conduct testing for [system]",
+        "Testing of [system]",
+        "Test [system]"
+      ],
+      "responses": [
+        "Conducting testing for [system]...",
+        "Initiating testing of [system].",
+        "Testing [system].",
+        "Testing in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-audit",
+      "patterns": [
+        "Analyze audit data",
+        "Audit analysis",
+        "Study audit reports"
+      ],
+      "responses": [
+        "Analyzing audit data...",
+        "Initiating audit analysis.",
+        "Studying audit reports.",
+        "Audit analysis in progress."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-procedure",
+      "patterns": [
+        "Develop procedure for [task]",
+        "Procedure development for [task]",
+        "Create protocol for [task]"
+      ],
+      "responses": [
+        "Developing procedure for [task]...",
+        "Initiating procedure development for [task].",
+        "Creating protocol for [task].",
+        "Procedure development in progress for [task]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-competition",
+      "patterns": [
+        "Analyze competition in [market]",
+        "Competition analysis for [market]",
+        "Study competitors in [market]"
+      ],
+      "responses": [
+        "Analyzing competition in [market]...",
+        "Initiating competition analysis for [market].",
+        "Studying competitors in [market].",
+        "Competition analysis in progress for [market]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-system",
+      "patterns": [
+        "Design system for [application]",
+        "System design for [application]",
+        "Create system architecture for [application]"
+      ],
+      "responses": [
+        "Designing system for [application]...",
+        "Initiating system design for [application].",
+        "Creating system architecture for [application].",
+        "System design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-poll",
+      "patterns": [
+        "Conduct poll on [issue]",
+        "Polling on [issue]",
+        "Poll [issue]"
+      ],
+      "responses": [
+        "Conducting poll on [issue]...",
+        "Initiating polling on [issue].",
+        "Polling on [issue].",
+        "Poll in progress on [issue]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "perform-forecast",
+      "patterns": [
+        "Perform forecast for [parameter]",
+        "Forecasting [parameter]",
+        "Predict [parameter]"
+      ],
+      "responses": [
+        "Performing forecast for [parameter]...",
+        "Initiating forecasting [parameter].",
+        "Predicting [parameter].",
+        "Forecast in progress for [parameter]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-prototype",
+      "patterns": [
+        "Develop prototype for [product]",
+        "Prototype development for [product]",
+        "Create model of [product]"
+      ],
+      "responses": [
+        "Developing prototype for [product]...",
+        "Initiating prototype development for [product].",
+        "Creating model of [product].",
+        "Prototype development in progress for [product]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-performance",
+      "patterns": [
+        "Evaluate performance of [system]",
+        "Performance evaluation for [system]",
+        "Assess performance of [system]"
+      ],
+      "responses": [
+        "Evaluating performance of [system]...",
+        "Initiating performance evaluation for [system].",
+        "Assessing performance of [system].",
+        "Performance evaluation in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "conduct-exploration",
+      "patterns": [
+        "Conduct exploration of [topic]",
+        "Exploration on [topic]",
+        "Explore [topic]"
+      ],
+      "responses": [
+        "Conducting exploration of [topic]...",
+        "Initiating exploration on [topic].",
+        "Exploring [topic].",
+        "Exploration in progress on [topic]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-policy",
+      "patterns": [
+        "Develop policy for [issue]",
+        "Policy development for [issue]",
+        "Create guidelines for [issue]"
+      ],
+      "responses": [
+        "Developing policy for [issue]...",
+        "Initiating policy development for [issue].",
+        "Creating guidelines for [issue].",
+        "Policy development in progress for [issue]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-impact",
+      "patterns": [
+        "Analyze impact of [factor]",
+        "Impact analysis for [factor]",
+        "Assess impact of [factor]"
+      ],
+      "responses": [
+        "Analyzing impact of [factor]...",
+        "Initiating impact analysis for [factor].",
+        "Assessing impact of [factor].",
+        "Impact analysis in progress for [factor]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "create-prototype",
+      "patterns": [
+        "Create prototype for [idea]",
+        "Prototype creation for [idea]",
+        "Build model of [idea]"
+      ],
+      "responses": [
+        "Creating prototype for [idea]...",
+        "Initiating prototype creation for [idea].",
+        "Building model of [idea].",
+        "Prototype creation in progress for [idea]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-strategy",
+      "patterns": [
+        "Evaluate strategy for [objective]",
+        "Strategy evaluation for [objective]",
+        "Assess plan for [objective]"
+      ],
+      "responses": [
+        "Evaluating strategy for [objective]...",
+        "Initiating strategy evaluation for [objective].",
+        "Assessing plan for [objective].",
+        "Strategy evaluation in progress for [objective]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-analysis",
+      "patterns": [
+        "Conduct analysis on [topic]",
+        "Analysis of [topic]",
+        "Data analysis for [topic]"
+      ],
+      "responses": [
+        "Conducting analysis on [topic]...",
+        "Initiating analysis of [topic].",
+        "Performing data analysis for [topic].",
+        "Analysis in progress for [topic]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-experience",
+      "patterns": [
+        "Design user experience for [application]",
+        "User experience design for [application]",
+        "Create UX for [application]"
+      ],
+      "responses": [
+        "Designing user experience for [application]...",
+        "Initiating user experience design for [application].",
+        "Creating UX for [application].",
+        "User experience design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-research",
+      "patterns": [
+        "Conduct research on [topic]",
+        "Research [topic]",
+        "Researching [topic]"
+      ],
+      "responses": [
+        "Conducting research on [topic]...",
+        "Initiating research on [topic].",
+        "Researching [topic].",
+        "Research in progress on [topic]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-test",
+      "patterns": [
+        "Develop test for [software]",
+        "Test development for [software]",
+        "Create software test for [software]"
+      ],
+      "responses": [
+        "Developing test for [software]...",
+        "Initiating test development for [software].",
+        "Creating software test for [software].",
+        "Test development in progress for [software]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-effectiveness",
+      "patterns": [
+        "Evaluate effectiveness of [strategy]",
+        "Effectiveness evaluation for [strategy]",
+        "Assess effectiveness of [strategy]"
+      ],
+      "responses": [
+        "Evaluating effectiveness of [strategy]...",
+        "Initiating effectiveness evaluation for [strategy].",
+        "Assessing effectiveness of [strategy].",
+        "Effectiveness evaluation in progress for [strategy]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-pattern",
+      "patterns": [
+        "Analyze pattern in [data]",
+        "Pattern analysis for [data]",
+        "Identify patterns in [data]"
+      ],
+      "responses": [
+        "Analyzing pattern in [data]...",
+        "Initiating pattern analysis for [data].",
+        "Identifying patterns in [data].",
+        "Pattern analysis in progress for [data]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-framework",
+      "patterns": [
+        "Develop framework for [application]",
+        "Framework development for [application]",
+        "Create architecture for [application]"
+      ],
+      "responses": [
+        "Developing framework for [application]...",
+        "Initiating framework development for [application].",
+        "Creating architecture for [application].",
+        "Framework development in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-impact",
+      "patterns": [
+        "Evaluate impact of [project]",
+        "Impact evaluation for [project]",
+        "Assess impact of [project]"
+      ],
+      "responses": [
+        "Evaluating impact of [project]...",
+        "Initiating impact evaluation for [project].",
+        "Assessing impact of [project].",
+        "Impact evaluation in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-trial",
+      "patterns": [
+        "Conduct trial for [procedure]",
+        "Trial of [procedure]",
+        "Trial run for [procedure]"
+      ],
+      "responses": [
+        "Conducting trial for [procedure]...",
+        "Initiating trial of [procedure].",
+        "Running trial for [procedure].",
+        "Trial in progress for [procedure]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "design-system",
+      "patterns": [
+        "Design system for [application]",
+        "System design for [application]",
+        "Create system architecture for [application]"
+      ],
+      "responses": [
+        "Designing system for [application]...",
+        "Initiating system design for [application].",
+        "Creating system architecture for [application].",
+        "System design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-feasibility",
+      "patterns": [
+        "Evaluate feasibility of [project]",
+        "Feasibility evaluation for [project]",
+        "Assess feasibility of [project]"
+      ],
+      "responses": [
+        "Evaluating feasibility of [project]...",
+        "Initiating feasibility evaluation for [project].",
+        "Assessing feasibility of [project].",
+        "Feasibility evaluation in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-campaign",
+      "patterns": [
+        "Develop campaign for [product]",
+        "Campaign development for [product]",
+        "Create marketing campaign for [product]"
+      ],
+      "responses": [
+        "Developing campaign for [product]...",
+        "Initiating campaign development for [product].",
+        "Creating marketing campaign for [product].",
+        "Campaign development in progress for [product]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "evaluate-accuracy",
+      "patterns": [
+        "Evaluate accuracy of [model]",
+        "Accuracy evaluation for [model]",
+        "Assess accuracy of [model]"
+      ],
+      "responses": [
+        "Evaluating accuracy of [model]...",
+        "Initiating accuracy evaluation for [model].",
+        "Assessing accuracy of [model].",
+        "Accuracy evaluation in progress for [model]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "develop-training",
+      "patterns": [
+        "Develop training program for [skill]",
+        "Training development for [skill]",
+        "Create training curriculum for [skill]"
+      ],
+      "responses": [
+        "Developing training program for [skill]...",
+        "Initiating training development for [skill].",
+        "Creating training curriculum for [skill].",
+        "Training development in progress for [skill]."
+      ],
+      "context": "education"
+    },
+    {
+      "tag": "analyze-behavior",
+      "patterns": [
+        "Analyze behavior patterns",
+        "Behavior analysis",
+        "Study behavior trends"
+      ],
+      "responses": [
+        "Analyzing behavior patterns...",
+        "Initiating behavior analysis.",
+        "Studying behavior trends.",
+        "Behavior analysis in progress."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-security",
+      "patterns": [
+        "Develop security measures for [system]",
+        "Security development for [system]",
+        "Create security protocols for [system]"
+      ],
+      "responses": [
+        "Developing security measures for [system]...",
+        "Initiating security development for [system].",
+        "Creating security protocols for [system].",
+        "Security development in progress for [system]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-impact",
+      "patterns": [
+        "Evaluate impact of [policy]",
+        "Impact evaluation for [policy]",
+        "Assess impact of [policy]"
+      ],
+      "responses": [
+        "Evaluating impact of [policy]...",
+        "Initiating impact evaluation for [policy].",
+        "Assessing impact of [policy].",
+        "Impact evaluation in progress for [policy]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-simulation",
+      "patterns": [
+        "Conduct simulation for [scenario]",
+        "Simulation of [scenario]",
+        "Simulate [scenario]"
+      ],
+      "responses": [
+        "Conducting simulation for [scenario]...",
+        "Initiating simulation of [scenario].",
+        "Simulating [scenario].",
+        "Simulation in progress for [scenario]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-usage",
+      "patterns": [
+        "Analyze usage data",
+        "Usage analysis",
+        "Study usage patterns"
+      ],
+      "responses": [
+        "Analyzing usage data...",
+        "Initiating usage analysis.",
+        "Studying usage patterns.",
+        "Usage analysis in progress."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "develop-algorithm",
+      "patterns": [
+        "Develop algorithm for [task]",
+        "Algorithm development for [task]",
+        "Create algorithm for [task]"
+      ],
+      "responses": [
+        "Developing algorithm for [task]...",
+        "Initiating algorithm development for [task].",
+        "Creating algorithm for [task].",
+        "Algorithm development in progress for [task]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-efficiency",
+      "patterns": [
+        "Evaluate efficiency of [process]",
+        "Efficiency evaluation for [process]",
+        "Assess efficiency of [process]"
+      ],
+      "responses": [
+        "Evaluating efficiency of [process]...",
+        "Initiating efficiency evaluation for [process].",
+        "Assessing efficiency of [process].",
+        "Efficiency evaluation in progress for [process]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "design-interface",
+      "patterns": [
+        "Design user interface for [product]",
+        "User interface design for [product]",
+        "Create UI for [product]"
+      ],
+      "responses": [
+        "Designing user interface for [product]...",
+        "Initiating user interface design for [product].",
+        "Creating UI for [product].",
+        "User interface design in progress for [product]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-experiment",
+      "patterns": [
+        "Conduct experiment on [subject]",
+        "Experimentation with [subject]",
+        "Experimental study on [subject]"
+      ],
+      "responses": [
+        "Conducting experiment on [subject]...",
+        "Initiating experimentation with [subject].",
+        "Initiating experimental study on [subject].",
+        "Experiment in progress on [subject]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-software",
+      "patterns": [
+        "Develop software for [purpose]",
+        "Software development for [purpose]",
+        "Create program for [purpose]"
+      ],
+      "responses": [
+        "Developing software for [purpose]...",
+        "Initiating software development for [purpose].",
+        "Creating program for [purpose].",
+        "Software development in progress for [purpose]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "perform-risk-analysis",
+      "patterns": [
+        "Perform risk analysis for [project]",
+        "Risk assessment for [project]",
+        "Analyze risks of [project]"
+      ],
+      "responses": [
+        "Performing risk analysis for [project]...",
+        "Initiating risk assessment for [project].",
+        "Analyzing risks of [project].",
+        "Risk analysis in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-testing",
+      "patterns": [
+        "Conduct testing for [system]",
+        "Testing of [system]",
+        "Test [system]"
+      ],
+      "responses": [
+        "Conducting testing for [system]...",
+        "Initiating testing of [system].",
+        "Testing [system].",
+        "Testing in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-audit",
+      "patterns": [
+        "Analyze audit data",
+        "Audit analysis",
+        "Study audit reports"
+      ],
+      "responses": [
+        "Analyzing audit data...",
+        "Initiating audit analysis.",
+        "Studying audit reports.",
+        "Audit analysis in progress."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-procedure",
+      "patterns": [
+        "Develop procedure for [task]",
+        "Procedure development for [task]",
+        "Create protocol for [task]"
+      ],
+      "responses": [
+        "Developing procedure for [task]...",
+        "Initiating procedure development for [task].",
+        "Creating protocol for [task].",
+        "Procedure development in progress for [task]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-competition",
+      "patterns": [
+        "Analyze competition in [market]",
+        "Competition analysis for [market]",
+        "Study competitors in [market]"
+      ],
+      "responses": [
+        "Analyzing competition in [market]...",
+        "Initiating competition analysis for [market].",
+        "Studying competitors in [market].",
+        "Competition analysis in progress for [market]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-system",
+      "patterns": [
+        "Design system for [application]",
+        "System design for [application]",
+        "Create system architecture for [application]"
+      ],
+      "responses": [
+        "Designing system for [application]...",
+        "Initiating system design for [application].",
+        "Creating system architecture for [application].",
+        "System design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-poll",
+      "patterns": [
+        "Conduct poll on [issue]",
+        "Polling on [issue]",
+        "Poll [issue]"
+      ],
+      "responses": [
+        "Conducting poll on [issue]...",
+        "Initiating polling on [issue].",
+        "Polling on [issue].",
+        "Poll in progress on [issue]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "perform-forecast",
+      "patterns": [
+        "Perform forecast for [parameter]",
+        "Forecasting [parameter]",
+        "Predict [parameter]"
+      ],
+      "responses": [
+        "Performing forecast for [parameter]...",
+        "Initiating forecasting [parameter].",
+        "Predicting [parameter].",
+        "Forecast in progress for [parameter]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-prototype",
+      "patterns": [
+        "Develop prototype for [product]",
+        "Prototype development for [product]",
+        "Create model of [product]"
+      ],
+      "responses": [
+        "Developing prototype for [product]...",
+        "Initiating prototype development for [product].",
+        "Creating model of [product].",
+        "Prototype development in progress for [product]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-performance",
+      "patterns": [
+        "Evaluate performance of [system]",
+        "Performance evaluation for [system]",
+        "Assess performance of [system]"
+      ],
+      "responses": [
+        "Evaluating performance of [system]...",
+        "Initiating performance evaluation for [system].",
+        "Assessing performance of [system].",
+        "Performance evaluation in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "conduct-exploration",
+      "patterns": [
+        "Conduct exploration of [topic]",
+        "Exploration on [topic]",
+        "Explore [topic]"
+      ],
+      "responses": [
+        "Conducting exploration of [topic]...",
+        "Initiating exploration on [topic].",
+        "Exploring [topic].",
+        "Exploration in progress on [topic]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-policy",
+      "patterns": [
+        "Develop policy for [issue]",
+        "Policy development for [issue]",
+        "Create guidelines for [issue]"
+      ],
+      "responses": [
+        "Developing policy for [issue]...",
+        "Initiating policy development for [issue].",
+        "Creating guidelines for [issue].",
+        "Policy development in progress for [issue]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-impact",
+      "patterns": [
+        "Analyze impact of [factor]",
+        "Impact analysis for [factor]",
+        "Assess impact of [factor]"
+      ],
+      "responses": [
+        "Analyzing impact of [factor]...",
+        "Initiating impact analysis for [factor].",
+        "Assessing impact of [factor].",
+        "Impact analysis in progress for [factor]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "create-prototype",
+      "patterns": [
+        "Create prototype for [idea]",
+        "Prototype creation for [idea]",
+        "Build model of [idea]"
+      ],
+      "responses": [
+        "Creating prototype for [idea]...",
+        "Initiating prototype creation for [idea].",
+        "Building model of [idea].",
+        "Prototype creation in progress for [idea]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-strategy",
+      "patterns": [
+        "Evaluate strategy for [objective]",
+        "Strategy evaluation for [objective]",
+        "Assess plan for [objective]"
+      ],
+      "responses": [
+        "Evaluating strategy for [objective]...",
+        "Initiating strategy evaluation for [objective].",
+        "Assessing plan for [objective].",
+        "Strategy evaluation in progress for [objective]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-analysis",
+      "patterns": [
+        "Conduct analysis on [topic]",
+        "Analysis of [topic]",
+        "Data analysis for [topic]"
+      ],
+      "responses": [
+        "Conducting analysis on [topic]...",
+        "Initiating analysis of [topic].",
+        "Performing data analysis for [topic].",
+        "Analysis in progress for [topic]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "design-experience",
+      "patterns": [
+        "Design user experience for [application]",
+        "User experience design for [application]",
+        "Create UX for [application]"
+      ],
+      "responses": [
+        "Designing user experience for [application]...",
+        "Initiating user experience design for [application].",
+        "Creating UX for [application].",
+        "User experience design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-research",
+      "patterns": [
+        "Conduct research on [topic]",
+        "Research [topic]",
+        "Researching [topic]"
+      ],
+      "responses": [
+        "Conducting research on [topic]...",
+        "Initiating research on [topic].",
+        "Researching [topic].",
+        "Research in progress on [topic]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-test",
+      "patterns": [
+        "Develop test for [software]",
+        "Test development for [software]",
+        "Create software test for [software]"
+      ],
+      "responses": [
+        "Developing test for [software]...",
+        "Initiating test development for [software].",
+        "Creating software test for [software].",
+        "Test development in progress for [software]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-effectiveness",
+      "patterns": [
+        "Evaluate effectiveness of [strategy]",
+        "Effectiveness evaluation for [strategy]",
+        "Assess effectiveness of [strategy]"
+      ],
+      "responses": [
+        "Evaluating effectiveness of [strategy]...",
+        "Initiating effectiveness evaluation for [strategy].",
+        "Assessing effectiveness of [strategy].",
+        "Effectiveness evaluation in progress for [strategy]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "analyze-pattern",
+      "patterns": [
+        "Analyze pattern in [data]",
+        "Pattern analysis for [data]",
+        "Identify patterns in [data]"
+      ],
+      "responses": [
+        "Analyzing pattern in [data]...",
+        "Initiating pattern analysis for [data].",
+        "Identifying patterns in [data].",
+        "Pattern analysis in progress for [data]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-framework",
+      "patterns": [
+        "Develop framework for [application]",
+        "Framework development for [application]",
+        "Create architecture for [application]"
+      ],
+      "responses": [
+        "Developing framework for [application]...",
+        "Initiating framework development for [application].",
+        "Creating architecture for [application].",
+        "Framework development in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-impact",
+      "patterns": [
+        "Evaluate impact of [project]",
+        "Impact evaluation for [project]",
+        "Assess impact of [project]"
+      ],
+      "responses": [
+        "Evaluating impact of [project]...",
+        "Initiating impact evaluation for [project].",
+        "Assessing impact of [project].",
+        "Impact evaluation in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-trial",
+      "patterns": [
+        "Conduct trial for [procedure]",
+        "Trial of [procedure]",
+        "Trial run for [procedure]"
+      ],
+      "responses": [
+        "Conducting trial for [procedure]...",
+        "Initiating trial of [procedure].",
+        "Running trial for [procedure].",
+        "Trial in progress for [procedure]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "design-system",
+      "patterns": [
+        "Design system for [application]",
+        "System design for [application]",
+        "Create system architecture for [application]"
+      ],
+      "responses": [
+        "Designing system for [application]...",
+        "Initiating system design for [application].",
+        "Creating system architecture for [application].",
+        "System design in progress for [application]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-feasibility",
+      "patterns": [
+        "Evaluate feasibility of [project]",
+        "Feasibility evaluation for [project]",
+        "Assess feasibility of [project]"
+      ],
+      "responses": [
+        "Evaluating feasibility of [project]...",
+        "Initiating feasibility evaluation for [project].",
+        "Assessing feasibility of [project].",
+        "Feasibility evaluation in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-campaign",
+      "patterns": [
+        "Develop campaign for [product]",
+        "Campaign development for [product]",
+        "Create marketing campaign for [product]"
+      ],
+      "responses": [
+        "Developing campaign for [product]...",
+        "Initiating campaign development for [product].",
+        "Creating marketing campaign for [product].",
+        "Campaign development in progress for [product]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "evaluate-accuracy",
+      "patterns": [
+        "Evaluate accuracy of [model]",
+        "Accuracy evaluation for [model]",
+        "Assess accuracy of [model]"
+      ],
+      "responses": [
+        "Evaluating accuracy of [model]...",
+        "Initiating accuracy evaluation for [model].",
+        "Assessing accuracy of [model].",
+        "Accuracy evaluation in progress for [model]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "develop-training",
+      "patterns": [
+        "Develop training program for [skill]",
+        "Training development for [skill]",
+        "Create training curriculum for [skill]"
+      ],
+      "responses": [
+        "Developing training program for [skill]...",
+        "Initiating training development for [skill].",
+        "Creating training curriculum for [skill].",
+        "Training development in progress for [skill]."
+      ],
+      "context": "education"
+    },
+    {
+      "tag": "analyze-behavior",
+      "patterns": [
+        "Analyze behavior patterns",
+        "Behavior analysis",
+        "Study behavior trends"
+      ],
+      "responses": [
+        "Analyzing behavior patterns...",
+        "Initiating behavior analysis.",
+        "Studying behavior trends.",
+        "Behavior analysis in progress."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-security",
+      "patterns": [
+        "Develop security measures for [system]",
+        "Security development for [system]",
+        "Create security protocols for [system]"
+      ],
+      "responses": [
+        "Developing security measures for [system]...",
+        "Initiating security development for [system].",
+        "Creating security protocols for [system].",
+        "Security development in progress for [system]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "evaluate-impact",
+      "patterns": [
+        "Evaluate impact of [policy]",
+        "Impact evaluation for [policy]",
+        "Assess impact of [policy]"
+      ],
+      "responses": [
+        "Evaluating impact of [policy]...",
+        "Initiating impact evaluation for [policy].",
+        "Assessing impact of [policy].",
+        "Impact evaluation in progress for [policy]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-simulation",
+      "patterns": [
+        "Conduct simulation for [scenario]",
+        "Simulation of [scenario]",
+        "Simulate [scenario]"
+      ],
+      "responses": [
+        "Conducting simulation for [scenario]...",
+        "Initiating simulation of [scenario].",
+        "Simulating [scenario].",
+        "Simulation in progress for [scenario]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-usage",
+      "patterns": [
+        "Analyze usage data",
+        "Usage analysis",
+        "Study usage patterns"
+      ],
+      "responses": [
+        "Analyzing usage data...",
+        "Initiating usage analysis.",
+        "Studying usage patterns.",
+        "Usage analysis in progress."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "develop-algorithm",
+      "patterns": [
+        "Develop algorithm for [task]",
+        "Algorithm development for [task]",
+        "Create algorithm for [task]"
+      ],
+      "responses": [
+        "Developing algorithm for [task]...",
+        "Initiating algorithm development for [task].",
+        "Creating algorithm for [task].",
+        "Algorithm development in progress for [task]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "evaluate-efficiency",
+      "patterns": [
+        "Evaluate efficiency of [process]",
+        "Efficiency evaluation for [process]",
+        "Assess efficiency of [process]"
+      ],
+      "responses": [
+        "Evaluating efficiency of [process]...",
+        "Initiating efficiency evaluation for [process].",
+        "Assessing efficiency of [process].",
+        "Efficiency evaluation in progress for [process]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "design-interface",
+      "patterns": [
+        "Design user interface for [product]",
+        "User interface design for [product]",
+        "Create UI for [product]"
+      ],
+      "responses": [
+        "Designing user interface for [product]...",
+        "Initiating user interface design for [product].",
+        "Creating UI for [product].",
+        "User interface design in progress for [product]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "conduct-experiment",
+      "patterns": [
+        "Conduct experiment on [subject]",
+        "Experimentation with [subject]",
+        "Experimental study on [subject]"
+      ],
+      "responses": [
+        "Conducting experiment on [subject]...",
+        "Initiating experimentation with [subject].",
+        "Initiating experimental study on [subject].",
+        "Experiment in progress on [subject]."
+      ],
+      "context": "science"
+    },
+    {
+      "tag": "develop-software",
+      "patterns": [
+        "Develop software for [purpose]",
+        "Software development for [purpose]",
+        "Create program for [purpose]"
+      ],
+      "responses": [
+        "Developing software for [purpose]...",
+        "Initiating software development for [purpose].",
+        "Creating program for [purpose].",
+        "Software development in progress for [purpose]."
+      ],
+      "context": "technology"
+    },
+    {
+      "tag": "perform-risk-analysis",
+      "patterns": [
+        "Perform risk analysis for [project]",
+        "Risk assessment for [project]",
+        "Analyze risks of [project]"
+      ],
+      "responses": [
+        "Performing risk analysis for [project]...",
+        "Initiating risk assessment for [project].",
+        "Analyzing risks of [project].",
+        "Risk analysis in progress for [project]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "conduct-testing",
+      "patterns": [
+        "Conduct testing for [system]",
+        "Testing of [system]",
+        "Test [system]"
+      ],
+      "responses": [
+        "Conducting testing for [system]...",
+        "Initiating testing of [system].",
+        "Testing [system].",
+        "Testing in progress for [system]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-audit",
+      "patterns": [
+        "Analyze audit data",
+        "Audit analysis",
+        "Study audit reports"
+      ],
+      "responses": [
+        "Analyzing audit data...",
+        "Initiating audit analysis.",
+        "Studying audit reports.",
+        "Audit analysis in progress."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "develop-procedure",
+      "patterns": [
+        "Develop procedure for [task]",
+        "Procedure development for [task]",
+        "Create protocol for [task]"
+      ],
+      "responses": [
+        "Developing procedure for [task]...",
+        "Initiating procedure development for [task].",
+        "Creating protocol for [task].",
+        "Procedure development in progress for [task]."
+      ],
+      "context": "engineering"
+    },
+    {
+      "tag": "analyze-competition",
+      "patterns": [
+        "Analyze competition in [market]",
+        "Competition analysis for [market]",
+        "Study competitors in [market]"
+      ],
+      "responses": [
+        "Analyzing competition in [market]...",
+        "Initiating competition analysis for [market].",
+        "Studying competitors in [market].",
+        "Competition analysis in progress for [market]."
+      ],
+      "context": "business"
+    },
+    {
+      "tag": "sherlock",
+      "patterns": ["start background check ", "sherlock ", "search social media for ", "find this person ", "investigate ", "look up "],
+      "responses": ["I am now running the social media scan.", "As you wish. Beginning analysis.", "I will now conduct the analysis.", "I will now conduct the search."],
+      "context": "command"
+    }
+  ]
+}
