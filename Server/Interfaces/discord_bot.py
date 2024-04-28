@@ -80,7 +80,7 @@ class DiscordBot:
                 else:
                     await message.reply("I am not permitted to perform administrative actions in this guild.")
 
-            if self.UIName.lower() in message.content.lower() or message.guild is None or (message.reference and message.reference.resolved.author == self.client.user):
+            elif self.UIName.lower() in message.content.lower() or message.guild is None or (message.reference and message.reference.resolved.author == self.client.user):
                 await message.channel.trigger_typing()
 
                 sentence = message.content
