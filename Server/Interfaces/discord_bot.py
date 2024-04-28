@@ -10,7 +10,7 @@ class DiscordBot:
     def __init__(self):
         config = loadconfig("Settings/config.json")
         key = loadconfig("Settings/discord_key.json")
-        servers = loadconfig("Settings/JURISDICTION.json")
+        self.servers = loadconfig("Settings/JURISDICTION.json")
         self.roles_mapping = loadconfig("Settings/role_mappings.json")
 
         self.key = key.get("DiscordAPI")
@@ -26,7 +26,12 @@ class DiscordBot:
         self.discordintents.message_content = True
         self.discordintents.reactions = True
 
-        self.client = commands.Bot(command_prefix='/', intents=self.discordintents)
+        self.client = commands.Bot(command_prefix=self.prefix, intents=self.discordintents)
+    
+    def authorise_guild(self, message):
+        with open("./Settings/JURISDICTION.json", "w+") as jurisfile:
+            self.servers["servers"].append(message.guild)
+            json.dump(self.servers, jurisfile, indent=4)
 
     def activate_bot(self):
         @self.client.event
@@ -69,6 +74,9 @@ class DiscordBot:
                                 await message.channel.send("Please provide a valid number of messages to delete.")
                         else:
                             await message.channel.send("You don't have permission to delete messages.")
+                    elif "authorise" in message.content.lower():
+                        if message.author.guild_permissions.administrator:
+                            self.authorise_guild(message)
                 else:
                     await message.reply("I am not permitted to perform administrative actions in this guild.")
 
