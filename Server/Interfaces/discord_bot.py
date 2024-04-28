@@ -42,21 +42,35 @@ class DiscordBot:
                         break
 
             if self.prefix in message.content:
-                user = message.author
-                roles_mapping = self.role_mappings
-                for role_keyword, role_name in roles_mapping.items():
-                    if role_keyword in message.content:
-                        try:
-                            role = nextcord.utils.get(message.guild.roles, name=role_name)
-                            await user.add_roles(role)
-                            response = await message.reply(f"You now have the {role_name} rank!")
-                            await asyncio.sleep(1)
-                        except Exception as error:
-                            response = await message.reply(f"Error: {error}")
-                        await asyncio.sleep(4)
-                        await message.delete()
-                        await response.delete()
-                        break
+                if str(message.guild) in self.incoming_servers:
+                    user = message.author
+                    roles_mapping = self.role_mappings
+                    if "role" in message.content.lower():
+                        for role_keyword, role_name in roles_mapping.items():
+                            if role_keyword in message.content:
+                                try:
+                                    role = nextcord.utils.get(message.guild.roles, name=role_name)
+                                    await user.add_roles(role)
+                                    response = await message.reply(f"You now have the {role_name} rank!")
+                                    await asyncio.sleep(1)
+                                except Exception as error:
+                                    response = await message.reply(f"Error: {error}")
+                                await asyncio.sleep(4)
+                                await message.delete()
+                                await response.delete()
+                                break
+                    elif "clear" in message.content.lower():
+                        if message.author.guild_permissions.manage_messages:
+                            try:
+                                amount = int(args[0])
+                                await message.channel.purge(limit=amount + 1)
+                                await message.channel.send(f"{amount} messages deleted by {message.author.mention}")
+                            except ValueError:
+                                await message.channel.send("Please provide a valid number of messages to delete.")
+                        else:
+                            await message.channel.send("You don't have permission to delete messages.")
+                else:
+                    await message.reply("I am not permitted to perform administrative actions in this guild.")
 
             if self.UIName.lower() in message.content.lower() or message.guild is None or (message.reference and message.reference.resolved.author == self.client.user):
                 await message.channel.trigger_typing()
