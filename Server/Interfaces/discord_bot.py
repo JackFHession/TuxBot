@@ -101,7 +101,6 @@ class DiscordBot:
                 with open("./short_term_memory/current_class.json", "r") as f:
                     intent_class = json.load(f)
                 
-                DoFunction(intent_class)
                 await message.reply(ResponseOutput)
 
                 try:
