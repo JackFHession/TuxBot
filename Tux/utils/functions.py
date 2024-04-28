@@ -309,12 +309,16 @@ def maxvol():
         os.system("osascript -e 'set Volume 10'")
 
 def speak(ResponseOutput):
-    words = loadconfig("./Personality/pronounciation.json")
-    for word in words["words"]:
-        if word.get("word") in ResponseOutput:
-            ResponseOutput = ResponseOutput.replace(word.get("word"), word.get("pronounce"))
-    engine.say(ResponseOutput)
-    engine.runAndWait()
+    try:
+        words = loadconfig("./Personality/pronounciation.json")
+        for word in words["words"]:
+            if word.get("word") in ResponseOutput:
+                ResponseOutput = ResponseOutput.replace(word.get("word"), word.get("pronounce"))
+        engine.say(ResponseOutput)
+        engine.runAndWait()
+    except Exception as e:
+        print(f"Error: {e}, skipping")
+        pass
 
 def save_speak(ResponseOutput):
     words = loadconfig("./Personality/pronounciation.json")
