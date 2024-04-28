@@ -32,6 +32,7 @@ class DiscordBot:
         with open("./Settings/JURISDICTION.json", "w+") as jurisfile:
             self.servers["servers"].append(str(message.guild))
             json.dump(self.servers, jurisfile, indent=4)
+        message.reply(f"{str(message.guild)} has now been added to my list of authorised servers.")
 
     def activate_bot(self):
         @self.client.event
@@ -70,8 +71,12 @@ class DiscordBot:
                     elif "clear" in message.content.lower():
                         if message.author.guild_permissions.manage_messages:
                             try:
-                                amount = int(args[0])
-                                await message.channel.purge(limit=amount + 1)
+                                fullcommand = str(message.content.lower())
+                                amount = fullcommand.replace(f"{self.prefix}", "")
+                                amount = amount.replace("clear", "")
+                                amount = amount.replace(" ", "")
+                                intamount = int(amount)
+                                await message.channel.purge(limit=intamount + 1)
                                 await message.channel.send(f"{amount} messages deleted by {message.author.mention}")
                             except ValueError:
                                 await message.channel.send("Please provide a valid number of messages to delete.")
