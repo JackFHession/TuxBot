@@ -52,7 +52,7 @@ class DiscordBot:
                             self.authorise_guild(message)
                 if str(message.guild) in self.incoming_servers:
                     user = message.author
-                    roles_mapping = self.role_mappings
+                    roles_mapping = self.roles_mapping
                     if "role" in message.content.lower():
                         for role_keyword, role_name in roles_mapping.items():
                             if role_keyword in message.content:
