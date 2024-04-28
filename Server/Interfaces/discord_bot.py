@@ -41,7 +41,7 @@ class DiscordBot:
                         await response.delete()
                         break
 
-            if self.prefix in message.content:
+            if str(message.content).startswith(self.prefix):
                 if str(message.guild) in self.incoming_servers:
                     user = message.author
                     roles_mapping = self.role_mappings
