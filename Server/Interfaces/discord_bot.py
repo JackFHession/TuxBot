@@ -47,6 +47,9 @@ class DiscordBot:
                         break
 
             if str(message.content).startswith(self.prefix):
+                if "authorise" in message.content.lower():
+                        if message.author.guild_permissions.administrator:
+                            self.authorise_guild(message)
                 if str(message.guild) in self.incoming_servers:
                     user = message.author
                     roles_mapping = self.role_mappings
@@ -74,9 +77,6 @@ class DiscordBot:
                                 await message.channel.send("Please provide a valid number of messages to delete.")
                         else:
                             await message.channel.send("You don't have permission to delete messages.")
-                    elif "authorise" in message.content.lower():
-                        if message.author.guild_permissions.administrator:
-                            self.authorise_guild(message)
                 else:
                     await message.reply("I am not permitted to perform administrative actions in this guild.")
 
