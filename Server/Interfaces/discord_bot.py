@@ -101,17 +101,8 @@ class DiscordBot:
                 with open("./short_term_memory/current_class.json", "r") as f:
                     intent_class = json.load(f)
                 
-                if intent_class.get("tag") == "sherlock":
-                    results = ""
-                    DeployFunction(intent_class)
-                    file_paths = glob.glob("./Utilities/*.txt")
-                    for file_path in file_paths:
-                        with open(file_path, "r") as file:
-                            results += file.read()
-                            await message.reply(results)
-                else:
-                    DoFunction(intent_class)
-                    await message.reply(ResponseOutput)
+                DoFunction(intent_class)
+                await message.reply(ResponseOutput)
 
                 try:
                     if message.guild.voice_client is None:
