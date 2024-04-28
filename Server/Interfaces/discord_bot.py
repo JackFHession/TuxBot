@@ -30,7 +30,7 @@ class DiscordBot:
     
     def authorise_guild(self, message):
         with open("./Settings/JURISDICTION.json", "w+") as jurisfile:
-            self.servers["servers"].append(message.guild)
+            self.servers["servers"].append(str(message.guild))
             json.dump(self.servers, jurisfile, indent=4)
 
     def activate_bot(self):
