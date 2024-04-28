@@ -19,7 +19,7 @@ class DiscordBot:
         self.disallowed_words = config.get("disallowed-words")
         self.warning_message = config.get("warning_message")
         self.authorised_users = config.get("Authorised_Users")
-        self.incoming_servers = servers.get("servers")
+        self.incoming_servers = self.servers.get("servers")
         self.port = config.get("default-port")
 
         self.discordintents = nextcord.Intents.default()
