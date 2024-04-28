@@ -10,7 +10,10 @@ import sys
 import pyttsx3
 import webbrowser
 
-engine = pyttsx3.init()
+try:
+    engine = pyttsx3.init()
+except:
+    pass
 
 def run_cprogram(path):
     if "./" not in path:
