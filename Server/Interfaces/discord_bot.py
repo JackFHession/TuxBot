@@ -60,8 +60,7 @@ class DiscordBot:
                         await response.delete()
                         break
 
-            if str(message.content).startswith(self.prefix):
-
+            if str(self.prefix) in str(message.content):
                 commandmessage = str(message.content.lower())
 
                 if "authorise" in commandmessage:
