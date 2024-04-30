@@ -27,12 +27,25 @@ class DiscordBot:
         self.discordintents.reactions = True
 
         self.client = commands.Bot(command_prefix=self.prefix, intents=self.discordintents)
+        self.client.event(self.on_member_join)
     
     def authorise_guild(self, message):
         with open("./Settings/JURISDICTION.json", "w+") as jurisfile:
             self.servers["servers"].append(str(message.guild))
             json.dump(self.servers, jurisfile, indent=4)
-        message.reply(f"{str(message.guild)} has now been added to my list of authorised servers.")
+
+    def welcome_users(self, message):
+        with open("./Settings/WelcomeUsers.json", "w+") as welcomefile:
+            welcomelist = json.load(welcomefile)
+            welcomelist["servers"].append(str(message.guild))
+            json.dump(welcomelist, welcomefile, indent=4)
+        
+    async def on_member_join(self, member):
+            if str(member.guild) in self.welcomelist:
+                welcome_message = f"Welcome to {member.guild.name}, {member.mention}!"
+                channel = member.guild.system_channel
+                if channel is not None:
+                    await default_channel.send(welcome_message)
 
     def activate_bot(self):
         @self.client.event
@@ -47,14 +60,23 @@ class DiscordBot:
                         await response.delete()
                         break
 
-            if str(message.content).startswith(self.prefix):
-                if "authorise" in message.content.lower():
+            if str(self.prefix) in str(message.content):
+                commandmessage = str(message.content.lower())
+
+                if "authorise" in commandmessage:
                         if message.author.guild_permissions.administrator:
                             self.authorise_guild(message)
+                            await message.reply(f"{str(message.guild)} has now been added to my list of authorised servers.")
+        
+                elif "welcome-users" in commandmessage:
+                        if message.author.guild_permissions.administrator:
+                            self.welcome_users(message)
+                            await message.reply(f"{str(message.guild)} has been added to the list of servers which I should welcome new users to.")
+    
                 if str(message.guild) in self.incoming_servers:
                     user = message.author
                     roles_mapping = self.roles_mapping
-                    if "role" in message.content.lower():
+                    if "role" in commandmessage:
                         for role_keyword, role_name in roles_mapping.items():
                             if role_keyword in message.content:
                                 try:
