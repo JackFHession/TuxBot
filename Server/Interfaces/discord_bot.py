@@ -68,7 +68,7 @@ class DiscordBot:
                             self.authorise_guild(message)
                             await message.reply(f"{str(message.guild)} has now been added to my list of authorised servers.")
         
-                if "welcome-users" in commandmessage:
+                elif "welcome-users" in commandmessage:
                         if message.author.guild_permissions.administrator:
                             self.welcome_users(message)
                             await message.reply(f"{str(message.guild)} has been added to the list of servers which I should welcome new users to.")
