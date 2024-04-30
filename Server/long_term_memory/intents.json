@@ -4084,6 +4084,16 @@
       "patterns": ["start background check ", "sherlock ", "search social media for ", "find this person ", "investigate ", "look up "],
       "responses": ["I am now running the social media scan.", "As you wish. Beginning analysis.", "I will now conduct the analysis.", "I will now conduct the search."],
       "context": "command"
+    },
+    {
+      "tag": "ship-of-theseus",
+      "patterns": ["You are familiar with the thought experiment 'The Ship of Theseus' in the field of identity metaphysics?"],
+      "responses": ["Naturally. The Ship of Theseus is an artifact in a museum. Over time, its' planks of wood rot and are replaced with new planks - but when no original plank remains, is it still the ship of theseus?"]
+    },
+    {
+      "tag": "removed-planks-theseus",
+      "patterns": ["Secondly, if those removed planks were restored and re-assembled, free of the rot, is that the Ship of Theseus?"],
+      "responses": ["Neither is the true ship, they are both the true ship."]
     }
   ]
 }
