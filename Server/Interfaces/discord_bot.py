@@ -61,12 +61,15 @@ class DiscordBot:
                         break
 
             if str(message.content).startswith(self.prefix):
-                if "authorise" in message.content.lower():
+
+                commandmessage = str(message.content.lower())
+
+                if "authorise" in commandmessage:
                         if message.author.guild_permissions.administrator:
                             self.authorise_guild(message)
                             await message.reply(f"{str(message.guild)} has now been added to my list of authorised servers.")
         
-                if "welcome users" in message.content.lower():
+                if "welcome users" in commandmessage:
                         if message.author.guild_permissions.administrator:
                             self.welcome_users(message)
                             await message.reply(f"{str(message.guild)} has been added to the list of servers which I should welcome new users to.")
@@ -74,7 +77,7 @@ class DiscordBot:
                 if str(message.guild) in self.incoming_servers:
                     user = message.author
                     roles_mapping = self.roles_mapping
-                    if "role" in message.content.lower():
+                    if "role" in commandmessage:
                         for role_keyword, role_name in roles_mapping.items():
                             if role_keyword in message.content:
                                 try:
