@@ -62,6 +62,7 @@ class DiscordBot:
                         await asyncio.sleep(4)
                         await response.delete()
                         break
+            
             with open("./long_term_memory/links.json", "r") as file:
                 links = json.load(file)
                 links = links["links"]
@@ -72,7 +73,9 @@ class DiscordBot:
                                 continue
                             print(int(channel))
                             receiver = self.client.get_channel(int(channel))
-                            await receiver.send(str(message.content))
+                            nickname = message.author.nick if message.author.nick else message.author.name
+                            copymessage = f"{nickname}: {str(message.content)}"
+                            await receiver.send(copymessage)
  
             if str(self.prefix) in str(message.content):
                 commandmessage = str(message.content.lower())
