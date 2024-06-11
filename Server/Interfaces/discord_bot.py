@@ -79,7 +79,7 @@ class DiscordBot:
                                 existing_links = json.load(linkfile)
                                 for link in existing_links["links"]:
                                     print(link)
-                                    if link.get("link_id") in str(linkid):
+                                    if link.get("link_id").lower() in str(linkid).lower():
                                         link["channels"].append(message.channel)
                                         print(link)
                                         break
