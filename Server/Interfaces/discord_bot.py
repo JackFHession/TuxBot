@@ -67,6 +67,7 @@ class DiscordBot:
                         for channel in link["channels"]:
                             if channel == str(message.channel.id):
                                 continue
+                            print(int(channel))
                             receiver = self.client.get_channel(int(channel))
                             await receiver.send(str(message.content))
  
