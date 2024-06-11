@@ -80,7 +80,7 @@ class DiscordBot:
                                 for link in existing_links["links"]:
                                     print(link)
                                     if link.get("link_id").lower() in str(linkid).lower():
-                                        link["channels"].append(message.channel)
+                                        link["channels"].append(str(message.channel))
                                         print(link)
                                         break
                             with open("./long_term_memory/links.json", "w") as linkfile:
