@@ -69,6 +69,7 @@ class DiscordBot:
                             await message.reply(f"{str(message.guild)} has now been added to my list of authorised servers.")
                 
                 elif "create link" in commandmessage:
+                    print("Understood.")
                         if message.author.guild_permissions.administrator:
                             server = message.guild
                             commandmessage = commandmessage.replace(self.prefix, "")
