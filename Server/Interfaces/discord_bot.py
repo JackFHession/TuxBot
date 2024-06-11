@@ -59,7 +59,17 @@ class DiscordBot:
                         await asyncio.sleep(4)
                         await response.delete()
                         break
-
+            with open("./long_term_memory/links.json", "r") as file:
+                links = json.load(file)
+                links = links["links"]
+                for link in links:
+                    if str(message.channel.id) in link["channels"]:
+                        for channel in link["channels"]:
+                            if channel == str(message.channel.id):
+                                continue
+                            receiver = self.client.get_channel(int(channel))
+                            await receiver.send(str(message.content))
+ 
             if str(self.prefix) in str(message.content):
                 commandmessage = str(message.content.lower())
 
