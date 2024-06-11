@@ -50,6 +50,9 @@ class DiscordBot:
     def activate_bot(self):
         @self.client.event
         async def on_message(message):
+            if message.author == self.client.user:
+                return
+            
             if str(message.guild) in self.incoming_servers:
                 sentence_words = message.content
                 for word in self.disallowed_words:
