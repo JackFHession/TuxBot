@@ -74,6 +74,7 @@ class DiscordBot:
                             server = message.guild
                             commandmessage = commandmessage.replace(self.prefix, "")
                             linkid = commandmessage.replace("create link ", "")
+                            print(linkid)
                             with open("./long_term_memory/links.json", "r") as linkfile:
                                 existing_links = json.load(linkfile)
                                 for link in existing_links["links"]:
