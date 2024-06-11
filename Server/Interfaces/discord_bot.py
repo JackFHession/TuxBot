@@ -69,6 +69,7 @@ class DiscordBot:
                             await message.reply(f"{str(message.guild)} has now been added to my list of authorised servers.")
                 
                 elif "create link" in commandmessage:
+                    print("Understood.")
                         if message.author.guild_permissions.administrator:
                             server = message.guild
                             commandmessage = commandmessage.replace(self.prefix, "")
@@ -76,7 +77,8 @@ class DiscordBot:
                             with open("./long_term_memory/links.json", "r") as linkfile:
                                 existing_links = json.load(linkfile)
                                 for link in existing_links["links"]:
-                                    if linkid == link.get("link_id"):
+                                    print(link)
+                                    if str(linkid) == link.get("link_id"):
                                         link["channels"].append(message.channel)
                                         print(link)
                                         break
