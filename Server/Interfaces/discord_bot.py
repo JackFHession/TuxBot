@@ -105,6 +105,7 @@ class DiscordBot:
                                         break
                             with open("./long_term_memory/links.json", "w") as linkfile:
                                 json.dump(existing_links, linkfile, indent=4)
+                            message.reply(f"{str(message.channel)} has been linked to group {linkid}.")
         
                 elif "welcome-users" in commandmessage:
                         if message.author.guild_permissions.administrator:
