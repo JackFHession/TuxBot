@@ -69,13 +69,16 @@ class DiscordBot:
                 for link in links:
                     if str(message.channel.id) in link["channels"]:
                         for channel in link["channels"]:
-                            if channel == str(message.channel.id):
-                                continue
-                            print(int(channel))
-                            receiver = self.client.get_channel(int(channel))
-                            nickname = message.author.nick if message.author.nick else message.author.name
-                            copymessage = f"{nickname}: {str(message.content)}"
-                            await receiver.send(copymessage)
+                            try:
+                                if channel == str(message.channel.id):
+                                    continue
+                                print(int(channel))
+                                receiver = self.client.get_channel(int(channel))
+                                nickname = message.author.nick if message.author.nick else message.author.name
+                                copymessage = f"{nickname}: {str(message.content)}"
+                                await receiver.send(copymessage)
+                            except:
+                                pass
  
             if str(self.prefix) in str(message.content):
                 commandmessage = str(message.content.lower())
