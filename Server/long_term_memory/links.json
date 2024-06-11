@@ -1,0 +1,11 @@
+{
+    "links": [
+        {
+            "link_id": "Test",
+            "channels": [
+                "1",
+                "2"
+            ]
+        }
+    ]
+}
