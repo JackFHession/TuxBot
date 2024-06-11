@@ -76,7 +76,8 @@ class DiscordBot:
                             with open("./long_term_memory/links.json", "r") as linkfile:
                                 existing_links = json.load(linkfile)
                                 for link in existing_links["links"]:
-                                    if linkid == link.get("link_id"):
+                                    print(link)
+                                    if str(linkid) == link.get("link_id"):
                                         link["channels"].append(message.channel)
                                         print(link)
                                         break
