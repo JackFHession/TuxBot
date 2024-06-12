@@ -22,6 +22,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         ResponseOutput = jarvis.say(sentence)
         intent_class = jarvis.get_class()
         accuracy = jarvis.accuracy_from
+        print(accuracy)
 
         if accuracy > 0.99:
             with open("short_term_memory/output.txt", "w") as outfile:
