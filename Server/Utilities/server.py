@@ -31,7 +31,13 @@ class RequestHandler(BaseHTTPRequestHandler):
                 "query": f"{sentence}"
                 }))
             responsej = response.json()
-            ResponseOutput = responsej.get("response")
+            CandidateResponseOutput = responsej.get("response")
+            with open("short_term_memory/output.txt", "r") as outfile:
+                prev = outfile.read()
+            if prev == CandidateResponseOutput:
+                pass:
+            else:
+                ResponseOutput = CandidateResponseOutput
             with open("short_term_memory/output.txt", "w") as outfile:
                 outfile.write(ResponseOutput)
         except:
