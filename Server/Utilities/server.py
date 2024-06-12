@@ -24,7 +24,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         accuracy = jarvis.accuracy_from
         print(f"Predicted accuracy: {accuracy}")
 
-        if accuracy > 0.99:
+        if accuracy > 0:
             response= requests.post("https://api.eureka-ai.dev/chat", headers={
                 "API-Key": "e9467f38-ab5d-49e2-8c1e-953c548996a1"
                 }, data=json.dumps({
