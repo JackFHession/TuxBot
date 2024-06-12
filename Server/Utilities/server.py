@@ -25,9 +25,6 @@ class RequestHandler(BaseHTTPRequestHandler):
         print(f"Predicted accuracy: {accuracy}")
 
         if accuracy > 0.99:
-            with open("short_term_memory/output.txt", "w") as outfile:
-                outfile.write(ResponseOutput)
-        else:
             response= requests.post("https://api.eureka-ai.dev/chat", headers={
                 "API-Key": "e9467f38-ab5d-49e2-8c1e-953c548996a1"
                 }, data=json.dumps({
