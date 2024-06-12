@@ -24,7 +24,7 @@ class RequestHandler(BaseHTTPRequestHandler):
         accuracy = jarvis.accuracy_from
         print(f"Predicted accuracy: {accuracy}")
 
-        if accuracy > 0:
+        try:
             response= requests.post("https://api.eureka-ai.dev/chat", headers={
                 "API-Key": "e9467f38-ab5d-49e2-8c1e-953c548996a1"
                 }, data=json.dumps({
@@ -34,6 +34,8 @@ class RequestHandler(BaseHTTPRequestHandler):
             ResponseOutput = responsej.get("response")
             with open("short_term_memory/output.txt", "w") as outfile:
                 outfile.write(ResponseOutput)
+        except:
+            pass
         
         with open("short_term_memory/current_class.json", "w") as outjson:
             json.dump(intent_class, outjson, indent=4)
