@@ -3,6 +3,7 @@ from io import BytesIO
 import json
 import os
 from AI.main import *
+import requests
 
 jarvis = JarvisAI()
 
@@ -20,9 +21,21 @@ class RequestHandler(BaseHTTPRequestHandler):
 
         ResponseOutput = jarvis.say(sentence)
         intent_class = jarvis.get_class()
+        accuracy = jarvis.accuracy_from
 
-        with open("short_term_memory/output.txt", "w") as outfile:
-            outfile.write(ResponseOutput)
+        if accuracy > 0.9:
+            with open("short_term_memory/output.txt", "w") as outfile:
+                outfile.write(ResponseOutput)
+        else:
+            response= requests.post("https://api.eureka-ai.dev/chat", headers={
+                "API-Key": "e9467f38-ab5d-49e2-8c1e-953c548996a1"
+                }, data=json.dumps({
+                "query": f"{sentence}"
+                }))
+            responsej = response.json()
+            ResponseOutput = responsej.get("response")
+            with open("short_term_memory/output.txt", "w") as outfile:
+                outfile.write(ResponseOutput)
         
         with open("short_term_memory/current_class.json", "w") as outjson:
             json.dump(intent_class, outjson, indent=4)

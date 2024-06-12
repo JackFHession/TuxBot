@@ -19,6 +19,7 @@ class JarvisAI:
         self.defaultnlgsize = "en_core_web_sm"
         self.NLG = NLG(self.defaultnlgsize, "./long_term_memory/janex.bin")
         self.classifier.set_device('cpu')
+        self.accuracy_from = None
 
     def say(self, input_string):
         if self.response_setting == "random":
@@ -49,6 +50,7 @@ class JarvisAI:
     def get_class(self):
         input_string = self.previous_input
         intent_class = self.classifier.pattern_compare(input_string)
+        self.accuracy_from = self.classifier.accuracy
         return intent_class
 
     def response_check(self):
