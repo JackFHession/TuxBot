@@ -95,7 +95,7 @@ class DiscordBot:
                             commandmessage = commandmessage.replace(self.prefix, "")
                             linkid = commandmessage.replace("create link ", "")
                             print(linkid)
-                            with open("./long_term_memory/links.json", "r") as linkfile:
+                            with open("./Settings/links.json", "r") as linkfile:
                                 existing_links = json.load(linkfile)
                                 for link in existing_links["links"]:
                                     print(link)
@@ -103,7 +103,7 @@ class DiscordBot:
                                         link["channels"].append(str(message.channel.id))
                                         print(link)
                                         break
-                            with open("./long_term_memory/links.json", "w") as linkfile:
+                            with open("./Settings/links.json", "w") as linkfile:
                                 json.dump(existing_links, linkfile, indent=4)
                             message.reply(f"{str(message.channel)} has been linked to group {linkid}.")
         
