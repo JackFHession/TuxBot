@@ -63,7 +63,7 @@ class DiscordBot:
                         await response.delete()
                         break
             
-            with open("./long_term_memory/links.json", "r") as file:
+            with open("./Settings/links.json", "r") as file:
                 links = json.load(file)
                 links = links["links"]
                 for link in links:
