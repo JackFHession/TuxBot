@@ -162,6 +162,9 @@ class DiscordBot:
                 with open("./short_term_memory/current_class.json", "r") as f:
                     intent_class = json.load(f)
                 
+                if "US3R" in ResponseOutput:
+                    ResponseOutput = ResponseOutput.replace("US3R", str(message.author))
+                
                 await message.reply(ResponseOutput)
 
                 try:

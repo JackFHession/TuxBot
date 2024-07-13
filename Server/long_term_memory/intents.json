@@ -4094,6 +4094,11 @@
       "tag": "removed-planks-theseus",
       "patterns": ["Secondly, if those removed planks were restored and re-assembled, free of the rot, is that the Ship of Theseus?"],
       "responses": ["Neither is the true ship, they are both the true ship."]
+    },
+    {
+      "tag": "identify-user",
+      "patterns": ["Identify me", "Who am I?", "Do you know who I am?", "Are you aware of who I am?", "Who am I?", "What is my name?"],
+      "responses": ["Yes. You are US3R.", "I don't know you in the traditional sense. But you are US3R.", "You are US3R.", "I know that you are US3R.", "You are called US3R."]
     }
   ]
 }
