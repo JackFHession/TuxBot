@@ -1,4 +1,4 @@
-#import whisper
+import whisper
 
 class speech:
     def __init__(self):
