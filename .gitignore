@@ -1,9 +1,2 @@
-Server/Settings/*.json
-Server/Settings/*
-Server/short_term_memory/*
-
-Client/Virtual_Environments/*
-Client/textoutput/*
-Client/Settings/*.json
-Client/Settings/*
-Client/short_term_memory/*
+Server/long_term_memory/Discord_API.json
+Server/long_term_memory/Eureka_API.json
