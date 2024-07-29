@@ -3,6 +3,7 @@ from io import BytesIO
 import json
 import os
 from AI.main import *
+from AI.inverter import *
 import requests
 
 jarvis = JarvisAI()
@@ -36,7 +37,7 @@ class RequestHandler(BaseHTTPRequestHandler):
                 prev = outfile.read()
 
             if prev == CandidateResponseOutput:
-                pass
+                ResponseOutput = invert_phrase(sentence)
             else:
                 ResponseOutput = CandidateResponseOutput
             

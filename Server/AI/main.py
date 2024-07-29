@@ -20,6 +20,7 @@ class JarvisAI:
         self.NLG = NLG(self.defaultnlgsize, "./long_term_memory/janex.bin")
         self.classifier.set_device('cpu')
         self.accuracy_from = None
+        self.fill_list = ["[task]", "[scenario]", "[process]"]
 
     def say(self, input_string):
         if self.response_setting == "random":
@@ -67,6 +68,7 @@ def main():
     intent_class = jarvis.get_class()
     with open("short_term_memory/current_class.json", "w") as file:
         json.dump(intent_class, file, indent=4)
+    
     with open("short_term_memory/output.txt", "w") as file:
         file.write(response)
 
