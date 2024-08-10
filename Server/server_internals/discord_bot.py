@@ -1,3 +1,5 @@
+from utils.utils import *
+
 import nextcord
 from nextcord import FFmpegPCMAudio
 from nextcord.ext import commands
@@ -22,6 +24,8 @@ class Discord:
 
         with open("./long_term_memory/Discord_API.json") as file:
             data = json.load(file)
+        
+        self.Settings = read_json("./long_term_memory/Settings.json")
 
         self.API_Key = data.get("API_Key")
 
@@ -29,7 +33,7 @@ class Discord:
         self.AI = Classifier()
         self.Eureka = Eureka_Connect()
 
-        self.UIName = "Tux"
+        self.UIName = self.Settings.get("UIName")
 
     def activate_bot(self):
         @self.client.event
