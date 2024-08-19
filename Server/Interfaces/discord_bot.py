@@ -46,6 +46,15 @@ class DiscordBot:
                 channel = member.guild.system_channel
                 if channel is not None:
                     await default_channel.send(welcome_message)
+                
+                role_name = "Member"
+                role = nextcord.utils.get(member.guild.roles, name=role_name)
+                if role:
+                    try:
+                        await member.add_roles(role)
+                        print(f"Assigned {role_name} role to {member.display_name}")
+                    except Exception as e:
+                        print(f"Failed to assign role: {e}")
 
     def activate_bot(self):
         @self.client.event

@@ -1,6 +1,8 @@
 from internal.core import *
 
 if __name__ == "__main__":
-    Instance = Intel()
-    while True:
-        Instance.default_interface()
+    Mode = input("Mode (voice/text): ")
+    if Mode.lower() == "text":
+        Instance = Intel()
+        while True:
+            Instance.default_interface()
