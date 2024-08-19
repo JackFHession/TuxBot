@@ -5,6 +5,7 @@ import asyncio
 import json
 from Utilities.functions import loadconfig, cprogram, DoFunction, mp3_tts, DeployFunction
 import glob
+import random
 
 class DiscordBot:
     def __init__(self):
@@ -174,6 +175,8 @@ class DiscordBot:
 
                 with open("./short_term_memory/current_class.json", "r") as f:
                     intent_class = json.load(f)
+                
+                ResponseOutput = random.choice(intent_class["responses"])
                 
                 if "US3R" in ResponseOutput:
                     ResponseOutput = ResponseOutput.replace("US3R", str(message.author))
