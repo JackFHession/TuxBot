@@ -41,6 +41,10 @@ class DiscordBot:
             json.dump(welcomelist, welcomefile, indent=4)
         
     async def on_member_join(self, member):
+            with open("./Settings/WelcomeUsers.json", "r") as welcomefile:
+                rawelcomelist = json.load(welcomefile)
+                self.welcomelist = rawelcomelist["servers"]
+                
             if str(member.guild) in self.welcomelist:
                 welcome_message = f"Welcome to {member.guild.name}, {member.mention}!"
                 channel = member.guild.system_channel
