@@ -1,0 +1,12 @@
+{
+  "intents": [
+    {
+      "tag": "alarm",
+      "patterns": [
+        "Time is matching.",
+        "Matching time.",
+        "Matching alarm time."
+      ]
+    }
+  ]
+}

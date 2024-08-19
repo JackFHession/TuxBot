@@ -4,6 +4,3 @@ Server/short_term_memory/*
 
 Client/Virtual_Environments/*
 Client/textoutput/*
-Client/Settings/*.json
-Client/Settings/*
-Client/short_term_memory/*
